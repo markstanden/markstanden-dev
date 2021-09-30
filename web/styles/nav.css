@@ -1,0 +1,44 @@
+@import url(./global.css);
+@import url(./logo.css);
+
+nav {
+   width: max-content;
+}
+
+.nav-link-group {
+   margin-left: auto;
+   font-size: calc(0.12 * var(--nav-size));
+}
+
+.nav-item {
+   margin: calc(0.05 * var(--nav-size));
+   padding: calc(0.07 * var(--nav-size));
+
+   color: var(--color-primary);
+   text-decoration: none;
+
+   border-radius: 0.2rem;
+   border: 1px solid;
+}
+
+.nav-item:active {
+   transform: translateY(1px);
+}
+
+.nav-item--primary {
+   background-color: var(--color-secondary);
+}
+
+.nav-item--current {
+   color: var(--color-grey);
+}
+
+.nav-item:hover {
+   color: var(--color-secondary);
+   transform: translateY(-2px);
+}
+
+.nav-item.nav-item--primary:hover {
+   color: var(--color-highlight);
+   transform: translateY(-2px);
+}

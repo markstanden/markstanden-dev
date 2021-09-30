@@ -1,0 +1,76 @@
+@import url(./theme.css);
+@import url(./nav.css);
+
+@media only screen and (min-width: 33.75em) {
+   /* > 700px */
+   :root {
+      --site-size: 30rem;
+      --code-size: 30rem;
+   }
+}
+
+@media only screen and (min-width: 43.75em) {
+   /* > 700px */
+   :root {
+      --site-size: 40rem;
+      --nav-size: 7rem;
+   }
+}
+
+@media only screen and (min-width: 63.75em) {
+   /* > 700px */
+   :root {
+      --site-size: 60rem;
+   }
+}
+
+h2 {
+   font-size: calc(1.4 * var(--fontsize-main));
+   background-color: inherit;
+   color: var(--color-primary);
+   border-bottom: 1px solid;
+   border-color: var(--color-secondary);
+}
+
+h3 {
+   color: var(--color-secondary);
+   border-bottom: 1px solid;
+   border-color: var(--color-highlight);
+
+   font-size: calc(1.2 * var(--fontsize-main));
+   font-weight: 200;
+}
+
+body {
+   background-color: var(--color-white);
+   color: var(--color-black);
+   font-size: calc(1 * var(--fontsize-main));
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   align-content: space-between;
+
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+   background-color: var(--color-white);
+   border-bottom: 3px solid;
+   border-color: var(--color-primary);
+}
+
+/* Outer wrapper div for entire site */
+.outer-wrapper {
+   padding: 1rem;
+}
+
+/*
+*   Helper Classes
+*/
+
+.shadow {
+   box-shadow: 0.25rem 0.25rem 0.5rem var(--color-shadow);
+}

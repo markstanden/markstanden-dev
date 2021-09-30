@@ -1,0 +1,31 @@
+/*
+ * Logo
+ */
+.logo-outer {
+   background-color: transparent;
+   width: min-content;
+   color: var(--color-primary);
+}
+.logo-title {
+   background-color: transparent;
+   width: min-content;
+
+   font-family: 'monolisa', 'Fira Code', monospace;
+   font-size: calc(0.09 * var(--logo-size));
+
+   padding: calc(0.05 * var(--logo-size));
+   margin: calc(0.025 * var(--logo-size)) auto
+      calc(0.02 * var(--logo-size)) auto;
+
+   border: 1px solid;
+}
+.logo-sub {
+   font-family: 'Inter', 'Lato', sans-serif;
+   font-size: calc(0.065 * var(--logo-size));
+
+   padding: calc(0.015 * var(--logo-size));
+   margin: calc(0.02 * var(--logo-size)) auto
+      calc(0.025 * var(--logo-size)) auto;
+
+   text-align: center;
+}

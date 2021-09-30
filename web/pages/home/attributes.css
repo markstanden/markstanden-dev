@@ -1,0 +1,31 @@
+/*
+*   Personal Attribute Cards
+*/
+
+.card-section {
+   max-width: 90vw;
+   display: flex;
+   justify-content: space-around;
+   align-content: space-around;
+   flex-wrap: wrap;
+}
+
+.card {
+   min-width: calc(0.8 * var(--card-size));
+   max-width: calc(1.2 * var(--card-size));
+   min-height: calc(1.5 * var(--card-size));
+   margin: calc(0.1 * var(--card-size));
+}
+
+.card:hover {
+   transform: translate(-2px, -2px);
+}
+
+.card-image {
+   max-width: calc(0.5 * var(--card-size));
+}
+
+.card-text {
+   padding: calc(0.15 * var(--card-size));
+   font-size: calc(1 * var(--fontsize-main));
+}

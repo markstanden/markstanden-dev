@@ -1,0 +1,60 @@
+/*
+*   Coding Language Cards
+*/
+
+.html {
+   --code-color: rgba(247, 23, 30);
+}
+
+.js {
+   --code-color: rgba(247, 223, 30);
+}
+
+.ts {
+   --code-color: var(--typescript-blue);
+}
+
+.code-section {
+   max-width: 90vw;
+   display: flex;
+   justify-content: space-around;
+   align-content: space-around;
+   flex-wrap: wrap;
+}
+
+.code-language {
+   background: linear-gradient(
+      310deg,
+      var(--code-color) 10%,
+      var(--color-white) 80%
+   );
+
+   margin-top: calc(0.1 * var(--code-size));
+   padding: calc(0.08 * var(--code-size));
+   border-radius: calc(0.03 * var(--code-size));
+   overflow: hidden;
+
+   max-width: calc(1.25 * var(--code-size));
+   min-width: calc(1 * var(--code-size));
+   min-height: calc(0.75 * var(--code-size));
+}
+
+.code-header {
+}
+
+.code-text {
+   display: flex;
+   align-items: center;
+   height: max-content;
+   flex-grow: 1;
+   font-size: calc(1 * var(--fontsize-main));
+   flex-grow: 1;
+}
+
+.code-image {
+   min-width: calc(0.025 * var(--code-size));
+   max-width: calc(0.05 * var(--code-size));
+   padding-left: calc(0.05 * var(--code-size));
+   align-self: flex-end;
+   justify-self: right;
+}

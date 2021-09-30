@@ -1,0 +1,36 @@
+:root {
+   /* Colour pallete via coolors.co */
+   --paradise-pink: #ee4266ff;
+   --light-coral: #ef6f6c;
+   --russian-violet: #2a1e5cff;
+   --lavender-grey: #bdbace;
+   --rich-black-fogra-39: #0a0f0dff;
+   --silver-sand: #c4cbcaff;
+   --ghost-white: #ededf4;
+   --light-sea-green: #3cbbb1ff;
+
+   --typescript-blue: #3178c6;
+   /* Colours */
+   --color-primary: var(--russian-violet);
+   --color-secondary: var(--light-coral);
+   --color-highlight: var(--lavender-grey);
+
+   --color-white: var(--ghost-white);
+   --color-black: var(--rich-black-fogra-39);
+   --color-grey: var(--silver-sand);
+   --color-shadow: #aaaaaa;
+
+   --code-color: var(--color-secondary);
+
+   /* Scale */
+   --site-size: 50rem;
+   --fontsize-main: calc(0.025 * var(--site-size));
+   --nav-size: calc(0.25 * var(--site-size));
+   --logo-size: calc(0.5 * var(--site-size));
+   --code-size: calc(0.5 * var(--site-size));
+   --card-size: calc(0.3 * var(--site-size));
+}
+
+body {
+   font-family: inter;
+}
