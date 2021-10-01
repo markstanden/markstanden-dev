@@ -17,19 +17,15 @@
             <p class="logo-sub">think twice code once.</p>
          </div>
          <nav class="nav-link-group">
-            <a
-               class="nav-item nav-item--current"
-               href="/"
-               >Home</a
-            >
+            <a class="nav-item" href="/">Home</a>
             <a
                class="nav-item nav-item--primary"
-               href="/pages/contact/"
+               href="/pages/contact"
                >Contact</a
             >
             <a
-               class="nav-item"
-               href="/pages/feedback/"
+               class="nav-item nav-item--current"
+               href="/pages/feedback"
                >Feedback</a
             >
             <a
@@ -45,7 +41,7 @@
          <section class="contact-form-section">
             <form
                method="GET"
-               action="../success/success.html"
+               action="../success?feedback"
                name="contact-request"
                netlify
             >
@@ -70,7 +66,7 @@
                   />
                </label>
 
-                <label for="project" class="feedback-label">
+               <label for="project" class="feedback-label">
                   <p>Your email address</p>
                   <input
                      name="project"
@@ -81,34 +77,34 @@
                   />
                </label>
 
-               <label for="feedback-subject" class="feedback-label">
+               <label
+                  for="feedback-subject"
+                  class="feedback-label"
+               >
                   <p>The subject of the feedback</p>
                   <input
                      name="feedback-subject"
                      type="text"
                      id="subject"
                      aria-label="Message Subject"
-                     placeholder="We'd love to talk about your work"
+                     placeholder="Subject area of the feedback"
                   />
                </label>
 
-               <label for="feedback-message" class="contact-label">
+               <label
+                  for="feedback-message"
+                  class="contact-label"
+               >
                   <p>Your Feedback</p>
                   <textarea
                      class="input"
                      name="message"
                      id="message"
                      aria-label="Main Message Content"
-                     rows="5"
-                     cols="50"
                      placeholder="You were great."
                   ></textarea>
                </label>
-               <button
-                  action="../success/success.html"
-                  type="submit"
-                  >Submit</button
-               >
+               <button type="submit">Submit</button>
             </form>
          </section>
 
