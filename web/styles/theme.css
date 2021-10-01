@@ -22,15 +22,11 @@
 
    --code-color: var(--color-secondary);
 
-   /* Scale */
-   --site-size: 50rem;
-   --fontsize-main: calc(0.025 * var(--site-size));
-   --nav-size: calc(0.25 * var(--site-size));
-   --logo-size: calc(0.5 * var(--site-size));
-   --code-size: calc(0.5 * var(--site-size));
-   --card-size: calc(0.3 * var(--site-size));
+   --font-family-sans: 'Inter', Tahoma, Impact, sans-serif;
+   --font-family-mono: 'MonoLisa', 'Fira Code',
+      'Lucida Mono', ui-monospace, Courier, monospace;
 }
 
 body {
-   font-family: inter;
+   font-family: var(--font-family-sans);
 }

@@ -3,7 +3,6 @@
 */
 
 .card-section {
-   max-width: 90vw;
    display: flex;
    justify-content: space-around;
    align-content: space-around;
@@ -12,9 +11,8 @@
 
 .card {
    min-width: calc(0.8 * var(--card-size));
-   max-width: calc(1.2 * var(--card-size));
-   min-height: calc(1.5 * var(--card-size));
-   margin: calc(0.1 * var(--card-size));
+   max-width: calc(1.4 * var(--card-size));
+   margin: calc(0.04 * var(--card-size));
 }
 
 .card:hover {
@@ -28,4 +26,10 @@
 .card-text {
    padding: calc(0.15 * var(--card-size));
    font-size: calc(1 * var(--fontsize-main));
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (min-width: 650px) {
 }

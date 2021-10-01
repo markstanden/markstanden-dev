@@ -1,26 +1,15 @@
 @import url(./theme.css);
 @import url(./nav.css);
 
-@media only screen and (min-width: 33.75em) {
-   /* > 700px */
-   :root {
-      --site-size: 30rem;
-      --code-size: 30rem;
-   }
-}
-
-@media only screen and (min-width: 43.75em) {
-   /* > 700px */
-   :root {
-      --site-size: 40rem;
-      --nav-size: 7rem;
-   }
-}
-
-@media only screen and (min-width: 63.75em) {
-   /* > 700px */
+@media only screen and (min-width: 60em) {
+   /* > 960px */
    :root {
       --site-size: 60rem;
+   }
+
+   main {
+      margin-left: 10rem;
+      margin-right: 10rem;
    }
 }
 
@@ -57,13 +46,13 @@ header {
    padding-left: 1rem;
    padding-right: 1rem;
 
-   background-color: var(--color-white);
+   background-color: var(--color-primary);
    border-bottom: 3px solid;
    border-color: var(--color-primary);
 }
 
-/* Outer wrapper div for entire site */
-.outer-wrapper {
+/* Outer wrapper for main page content */
+main {
    padding: 1rem;
 }
 
@@ -73,4 +62,10 @@ header {
 
 .shadow {
    box-shadow: 0.25rem 0.25rem 0.5rem var(--color-shadow);
+}
+
+@media screen and (max-width: 400px) {
+   main {
+      margin: 0;
+   }
 }

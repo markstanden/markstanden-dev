@@ -1,32 +1,43 @@
 @import url(./global.css);
 @import url(./logo.css);
 
-nav {
-   width: max-content;
+header {
+   flex-direction: column;
+
+   --nav-size: 4rem;
 }
 
 .nav-link-group {
-   margin-left: auto;
-   font-size: calc(0.12 * var(--nav-size));
+   --color-nav-primary: var(--color-white);
+   --color-nav-secondary: var(--color-secondary);
+   --color-nav-background: transparent;
+
+   width: max-content;
+   margin: calc(0.14 * var(--nav-size)) auto
+      calc(0.14 * var(--nav-size)) auto;
+   font-size: calc(0.14 * var(--nav-size));
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .nav-item {
-   margin: calc(0.05 * var(--nav-size));
-   padding: calc(0.07 * var(--nav-size));
+   margin: calc(0.06 * var(--nav-size));
+   padding: calc(0.12 * var(--nav-size));
 
-   color: var(--color-primary);
+   color: var(--color-nav-primary);
    text-decoration: none;
 
    border-radius: 0.2rem;
    border: 1px solid;
+   border-color: var(--color-nav-background);
 }
 
 .nav-item:active {
-   transform: translateY(1px);
+   transform: translateY(2px);
 }
 
 .nav-item--primary {
-   background-color: var(--color-secondary);
+   background-color: var(--color-nav-secondary);
 }
 
 .nav-item--current {
@@ -35,10 +46,36 @@ nav {
 
 .nav-item:hover {
    color: var(--color-secondary);
+   border-color: var(--color-nav-secondary);
    transform: translateY(-2px);
 }
 
 .nav-item.nav-item--primary:hover {
    color: var(--color-highlight);
-   transform: translateY(-2px);
+   transform: translateY(-3px);
+}
+
+@media screen and (min-width: 660px) {
+   header {
+      --nav-size: 6rem;
+   }
+}
+
+/* Beyond mobile type screens */
+
+@media screen and (min-width: 750px) {
+   header {
+      flex-direction: row;
+      --nav-size: 8rem;
+   }
+
+   .nav-link-group {
+      margin-right: 0;
+   }
+}
+
+@media screen and (min-width: 950px) {
+   header {
+      --nav-size: 9rem;
+   }
 }

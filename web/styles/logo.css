@@ -1,16 +1,22 @@
 /*
  * Logo
  */
+:root {
+   --color-logo-primary: var(--color-white);
+   --color-logo-background: transparent;
+   --logo-size: 10rem;
+}
+
 .logo-outer {
    background-color: transparent;
    width: min-content;
-   color: var(--color-primary);
+   color: var(--color-logo-primary);
 }
 .logo-title {
    background-color: transparent;
    width: min-content;
 
-   font-family: 'monolisa', 'Fira Code', monospace;
+   font-family: var(--font-family-mono);
    font-size: calc(0.09 * var(--logo-size));
 
    padding: calc(0.05 * var(--logo-size));
