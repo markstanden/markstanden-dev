@@ -15,6 +15,8 @@
 }
 
 .code-section {
+    --code-size: 10rem;
+
    font-family: var(--font-main);
    width: 100%;
    display: flex;
@@ -55,9 +57,9 @@
 .code-image {
    align-self: flex-end;
    min-width: calc(0.2 * var(--code-size));
-   max-width: calc(0.03 * var(--code-size));
+   max-width: calc(0.3 * var(--code-size));
 
-   margin-left: calc(0.05 * var(--code-size));
+   margin-left: calc(0.5 * var(--code-size));
 }
 
 @media screen and (max-width: 400px) {
@@ -87,7 +89,7 @@
       min-width: calc(1 * var(--code-size));
    }
 
-   .code-image {
+    .code-image {
       min-width: calc(0.3 * var(--code-size));
       max-width: calc(0.05 * var(--code-size));
       margin-left: calc(0.07 * var(--code-size));
