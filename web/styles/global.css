@@ -1,18 +1,6 @@
 @import url(./theme.css);
 @import url(./nav.css);
 
-@media only screen and (min-width: 60em) {
-   /* > 960px */
-   :root {
-      --site-size: 60rem;
-   }
-
-   main {
-      margin-left: 10rem;
-      margin-right: 10rem;
-   }
-}
-
 h2 {
    font-size: calc(1.4 * var(--fontsize-main));
    background-color: inherit;
@@ -64,8 +52,26 @@ main {
    box-shadow: 0.25rem 0.25rem 0.5rem var(--color-shadow);
 }
 
-@media screen and (max-width: 400px) {
+/*
+ * I have made an effort to display well
+ * for very small screens.
+ */
+@media screen and (max-width: 25em) /* 400px */ {
    main {
       margin: 0;
+   }
+}
+
+@media only screen and (min-width: 60em) /* 960px */ {
+   main {
+      margin-left: 10rem;
+      margin-right: 10rem;
+   }
+}
+
+@media only screen and (min-width: 100em) /* 1600px */ {
+   main {
+      margin-left: 15rem;
+      margin-right: 15rem;
    }
 }

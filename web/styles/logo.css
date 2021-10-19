@@ -4,7 +4,7 @@
 :root {
    --color-logo-primary: var(--color-white);
    --color-logo-background: transparent;
-   --logo-size: 10rem;
+   --logo-size: 15rem;
 }
 
 .logo-outer {
