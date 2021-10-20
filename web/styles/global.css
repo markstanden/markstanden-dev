@@ -68,9 +68,12 @@ main {
 }
 
 .section-start {
-   margin-top: 3rem;
    text-align: center;
    font-size: calc(1 * var(--fontsize-section-header));
+}
+
+footer {
+   padding-top: 20rem;
 }
 
 @media only screen and (min-width: 60em) {

@@ -3,7 +3,7 @@
 */
 
 :root {
-   --code-background: var(--color-highlight);
+   --code-background: var(--color-white);
    --code-text: var(--color-primary);
    --code-text: var(--color-primary);
 
@@ -12,15 +12,15 @@
 }
 
 .html {
-   --code-color: rgba(247, 23, 30);
+   --code-color: rgba(247, 23, 30, 0.5);
 }
 
 .js {
-   --code-color: rgba(247, 223, 30);
+   --code-color: rgba(247, 223, 30, 0.5);
 }
 
 .ts {
-   --code-color: var(--typescript-blue);
+   --code-color: rgba(49, 120, 198, 0.5);
 }
 
 .code-section {
@@ -62,6 +62,7 @@
 
    margin: calc(0.05 * var(--code-size));
    padding: calc(0.08 * var(--code-size));
+   border: 3px solid var(--color-primary);
    border-radius: calc(0.03 * var(--code-size));
 
    width: 100vw;
