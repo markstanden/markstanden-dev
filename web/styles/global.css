@@ -1,5 +1,6 @@
 @import url(./theme.css);
 @import url(./nav.css);
+@import url(./footer.css);
 
 h2 {
    font-size: calc(1.4 * var(--fontsize-main));
@@ -65,15 +66,12 @@ main {
 main {
    margin: 0;
    padding: 0;
+   border: none;
 }
 
 .section-start {
    text-align: center;
    font-size: calc(1 * var(--fontsize-section-header));
-}
-
-footer {
-   padding-top: 20rem;
 }
 
 @media only screen and (min-width: 60em) {

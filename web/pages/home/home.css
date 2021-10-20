@@ -10,10 +10,35 @@
    background-color: var(--color-white);
 }
 
+section {
+   padding-top: 5rem;
+}
+
 section:not(:first-child) {
    padding-top: 20rem;
 }
 
+.button-contact {
+   position: relative;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+
+   border: 3px solid var(--color-primary);
+   border-radius: 0.5rem;
+   padding: 1.5rem;
+
+   background-color: var(--color-secondary);
+   color: var(--color-white);
+
+   font-size: larger;
+}
+
+.button-contact:hover {
+   transform: translate(-1);
+}
+
+/* Color two of every 4 elements, starting with 1 and 2 */
 section:nth-child(4n-3),
 .section-divider:nth-child(4n-2) {
    background-color: var(--color-highlight);
@@ -29,7 +54,7 @@ section:nth-child(4n-3),
       50% 0%,
       100% 0,
       100% 35%,
-      50% 70%,
+      50% 65%,
       0 35%,
       0 0
    );
@@ -37,8 +62,8 @@ section:nth-child(4n-3),
       50% 0%,
       100% 0,
       100% 35%,
-      50% 70%,
+      50% 65%,
       0 35%,
-      0
+      0 0
    );
 }
