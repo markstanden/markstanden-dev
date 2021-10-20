@@ -40,6 +40,7 @@ header {
 }
 
 .nav-item--primary {
+   border: 3px solid var(--color-nav-secondary);
    background-color: var(--color-nav-secondary);
 }
 
@@ -57,7 +58,8 @@ header {
 
 .nav-item.nav-item--primary:hover,
 .nav-item.nav-item--primary:focus {
-   color: var(--color-highlight);
+   color: var(--color-white);
+   border: 3px solid var(--color-white);
    transform: translateY(-2px);
 }
 

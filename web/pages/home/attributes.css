@@ -3,18 +3,30 @@
 */
 
 .card-section {
+   --card-size: 10rem;
+}
+.attribute-cards {
    display: flex;
    justify-content: space-around;
    align-content: space-around;
    flex-wrap: wrap;
-
-   --card-size: 10rem;
 }
-
 .card {
    min-width: calc(0.8 * var(--card-size));
    max-width: calc(1.4 * var(--card-size));
-   margin: calc(0.04 * var(--card-size));
+
+   margin: calc(0.15 * var(--card-size));
+   border: 3px solid var(--color-secondary);
+   border-radius: calc(0.08 * var(--card-size));
+   background-color: var(--color-highlight);
+   color: var(--color-primary);
+}
+
+.card-text h3 {
+   color: var(--color-primary);
+   font-size: 1.4rem;
+   font-weight: bold;
+   text-align: center;
 }
 
 .card:hover {
@@ -28,6 +40,7 @@
 .card-text {
    padding: calc(0.15 * var(--card-size));
    font-size: calc(1 * var(--fontsize-main));
+   text-align: center;
 }
 
 @media screen and (max-width: 400px) {

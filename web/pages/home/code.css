@@ -23,16 +23,6 @@
    --code-color: rgba(49, 120, 198, 0.5);
 }
 
-.code-section {
-   --code-size: 11rem;
-   text-align: center;
-}
-
-.code-language {
-   margin: calc(0.07 * var(--code-size)) 0 0 0;
-   width: 100vw;
-}
-
 .code-body {
    display: flex;
    align-content: space-between;
@@ -43,8 +33,13 @@
 .code-section {
    --code-size: 20rem;
 
+   text-align: center;
    font-family: var(--font-main);
    width: 100%;
+
+}
+
+.code-language-cards{
    display: flex;
    justify-content: space-around;
    align-content: space-around;
@@ -52,6 +47,8 @@
 }
 
 .code-language {
+   margin: calc(0.07 * var(--code-size)) 0 0 0;
+   width: 100vw;
    background: linear-gradient(
       160deg,
       var(--code-background) 45%,
@@ -70,6 +67,7 @@
 }
 
 .code-header {
+   width: 100%;
    margin-top: 0;
    font-size: var(--code-header-fontsize);
    color: var(--code-header);
