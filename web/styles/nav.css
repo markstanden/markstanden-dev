@@ -35,29 +35,35 @@ header {
    border-radius: 0.2rem;
    border: 1px solid;
    border-color: var(--color-nav-background);
-}
 
-.nav-item:active {
-   transform: translateY(2px);
+   transition: transform 0.1s;
 }
 
 .nav-item--primary {
    background-color: var(--color-nav-secondary);
 }
 
-.nav-item--current {
+.nav-item--current .nav-text {
    color: var(--color-grey);
+   border-bottom: 3px solid var(--color-secondary);
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:focus {
    color: var(--color-secondary);
    border-color: var(--color-nav-secondary);
    transform: translateY(-2px);
 }
 
-.nav-item.nav-item--primary:hover {
+.nav-item.nav-item--primary:hover,
+.nav-item.nav-item--primary:focus {
    color: var(--color-highlight);
-   transform: translateY(-3px);
+   transform: translateY(-2px);
+}
+
+.nav-item:active,
+.nav-item.nav-item--primary:active {
+   transform: translate(0, 1px);
 }
 
 /*

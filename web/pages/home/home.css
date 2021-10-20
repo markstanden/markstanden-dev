@@ -32,10 +32,17 @@ section:not(:first-child) {
    color: var(--color-white);
 
    font-size: larger;
+
+   transition: transform 0.1s;
 }
 
-.button-contact:hover {
-   transform: translate(-1);
+.button-contact:hover,
+.button-contact:focus {
+   transform: translate(-50%, 48%);
+}
+
+.button-contact:active {
+   transform: translate(-50%, 51%);
 }
 
 /* Color two of every 4 elements, starting with 1 and 2 */

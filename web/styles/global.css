@@ -53,6 +53,14 @@ main {
    box-shadow: 0.25rem 0.25rem 0.5rem var(--color-shadow);
 }
 
+.lift:hover {
+   transform: translate(0px, -1px);
+}
+
+.lift:active {
+   transform: translate(0px, 1px);
+}
+
 /*
  * 30em     =  480px
  * 40em     =  640px
