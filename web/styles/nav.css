@@ -1,10 +1,15 @@
 @import url(./global.css);
 @import url(./logo.css);
 
+:root {
+   --nav-fontsize: calc(1 * var(--fontsize-main));
+}
+
 header {
    flex-direction: column;
-
-   --nav-size: 4rem;
+   --logo-size: 15rem;
+   --nav-size: 6rem;
+   padding-top: 1rem;
 }
 
 .nav-link-group {
@@ -15,7 +20,7 @@ header {
    width: max-content;
    margin: calc(0.14 * var(--nav-size)) auto
       calc(0.14 * var(--nav-size)) auto;
-   font-size: calc(0.14 * var(--nav-size));
+   font-size: var(--nav-fontsize);
    display: flex;
    flex-wrap: wrap;
 }
@@ -55,18 +60,38 @@ header {
    transform: translateY(-3px);
 }
 
-@media screen and (min-width: 660px) {
+/*
+ * 30em     =  480px
+ * 40em     =  640px
+ * 60em     =  960px
+ * 80em     =  1280px
+ * 90em     =  1440px
+ * 100em    =  1600px
+ * 120em    =  1920px
+ */
+@media screen and (min-width: 30em) {
    header {
-      --nav-size: 6rem;
+      --nav-size: 8rem;
+      --logo-size: 20rem;
+   }
+}
+
+@media screen and (min-width: 40em) {
+   header {
+      --nav-size: 9rem;
+      --logo-size: 25rem;
    }
 }
 
 /* Beyond mobile type screens */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 60em) {
    header {
       flex-direction: row;
       --nav-size: 8rem;
+
+      --logo-size: 22rem;
+      padding-top: 0;
    }
 
    .nav-link-group {
@@ -74,7 +99,7 @@ header {
    }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 80em) {
    header {
       --nav-size: 9rem;
    }

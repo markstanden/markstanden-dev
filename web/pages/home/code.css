@@ -6,7 +6,11 @@
    --code-background: var(--color-highlight);
    --code-text: var(--color-primary);
    --code-text: var(--color-primary);
+
+   --code-fontsize: calc(1 * var(--fontsize-main));
+   --code-header-fontsize: calc(1 * var(--fontsize-header));
 }
+
 .html {
    --code-color: rgba(247, 23, 30);
 }
@@ -66,14 +70,14 @@
 
 .code-header {
    margin-top: 0;
-   font-size: calc(0.09 * var(--code-size));
+   font-size: var(--code-header-fontsize);
    color: var(--code-header);
    font-weight: bold;
 }
 
 .code-text {
    align-items: baseline;
-   font-size: calc(0.05 * var(--code-size));
+   font-size: var(--code-fontsize);
    height: fit-content;
 }
 

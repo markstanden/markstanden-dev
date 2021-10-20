@@ -4,14 +4,15 @@
 :root {
    --color-logo-primary: var(--color-white);
    --color-logo-background: transparent;
-   --logo-size: 15rem;
 }
 
 .logo-outer {
    background-color: transparent;
    width: min-content;
    color: var(--color-logo-primary);
+   margin: calc(0.03 * var(--logo-size));
 }
+
 .logo-title {
    background-color: transparent;
    width: min-content;
@@ -25,6 +26,7 @@
 
    border: 1px solid;
 }
+
 .logo-sub {
    font-family: 'Inter', 'Lato', sans-serif;
    font-size: calc(0.065 * var(--logo-size));
