@@ -12,7 +12,7 @@
    /* Colours */
    --color-primary: var(--russian-violet);
    --color-secondary: var(--light-coral);
-   --color-secondary: var(--light-sea-green);
+   /* --color-secondary: var(--light-sea-green); */
    --color-highlight: var(--lavender-grey);
 
    --color-white: var(--ghost-white);
