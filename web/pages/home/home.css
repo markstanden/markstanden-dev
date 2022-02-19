@@ -2,7 +2,7 @@
 @import url(./code.css);
 @import url(./attributes.css);
 
-.outer-wrapper {
+.main-wrapper {
    position: relative;
 }
 
@@ -10,11 +10,11 @@
    background-color: var(--color-white);
 }
 
-section {
+.main-section {
    padding-top: 5rem;
 }
 
-section:not(:first-child) {
+.main-section:not(:first-child) {
    padding-top: 20rem;
 }
 
@@ -45,7 +45,7 @@ section:not(:first-child) {
 }
 
 /* Color two of every 4 elements, starting with 1 and 2 */
-section:nth-child(4n-3),
+.main-section:nth-child(4n-3),
 .section-divider:nth-child(4n-2) {
    background-color: var(--color-highlight);
 }

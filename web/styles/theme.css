@@ -1,5 +1,7 @@
 :root {
-   /* Colour pallete via coolors.co */
+   /* Colour palette via coolors.co
+   https://coolors.co/0a0f0d-2a1e5c-6290c8-12664f-bb0a21-ef6f6c-e3b505-bdbace-c4cbca-ededf4
+   */
    --paradise-pink: #ee4266ff;
    --light-coral: #ef6f6c;
    --russian-violet: #2a1e5cff;
@@ -12,8 +14,8 @@
    /* Colours */
    --color-primary: var(--russian-violet);
    --color-secondary: var(--light-coral);
-   /* --color-secondary: var(--light-sea-green); */
    --color-highlight: var(--lavender-grey);
+
 
    --color-white: var(--ghost-white);
    --color-black: var(--rich-black-fogra-39);
