@@ -52,14 +52,11 @@
 .code-section--card {
 	background    : linear-gradient(60deg, var(--code-background) 55%, var(--code-color));
 	border        : 3px solid var(--color-primary);
-
 	border-radius : calc(0.05 * var(--card-size));
-
 	color         : var(--code-text--color);
 	margin        : calc(0.2 * var(--card-size));
 	min-height    : calc(1.1 * var(--card-size));
 	padding       : calc(0.15 * var(--card-size));
-
 	width         : 100vw;
 }
 
@@ -67,19 +64,20 @@
 .code-card-section--title-block {
 	color       : var(--code-text--color);
 	font-weight : bold;
-	margin-top  : 0;
 	width       : 100%;
 }
 
 .code-card-section--title-block > h3 {
-	flex-grow : 2;
-	font-size : var(--code-header--fontsize);
+	flex-grow     : 2;
+	font-size     : var(--code-header--fontsize);
+	margin-bottom : calc(0.1 * var(--card-size));
 }
 
 .code-card-section--title-block > img {
 	border-radius : 1rem;
-	max-width     : calc(0.5 * var(--card-size));
-	min-width     : calc(0.25 * var(--card-size));
+	margin-bottom : calc(0.1 * var(--card-size));
+	max-width     : calc(0.3 * var(--card-size));
+	min-width     : calc(0.2 * var(--card-size));
 }
 
 /* The text section wrapper */
@@ -108,8 +106,10 @@
 	}
 
 	.code-card-section--title-block > h3 {
+		align-self    : center;
 		font-size     : calc(1.2 * var(--code-header--fontsize));
-		margin-bottom : 2.5rem;
+		margin-bottom : 0;
+		margin-left   : calc(0.1 * var(--card-size));
 	}
 
 	.code-card-section--text {
@@ -118,6 +118,6 @@
 
 	.code-card-section--text > p {
 		font-size : calc(1.4 * var(--code-text--fontsize));
-		margin    : 1.5rem;
+		margin    : calc(0.1 * var(--card-size));
 	}
 }

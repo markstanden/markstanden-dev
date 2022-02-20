@@ -1,4 +1,4 @@
 footer {
-   margin: 0;
-   padding-top: 20rem;
+	background-color : var(--color-nav-background);
+	padding-top      : 20rem;
 }

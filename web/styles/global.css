@@ -2,73 +2,103 @@
 @import url(./nav.css);
 @import url(./footer.css);
 
-html{
-   box-sizing: border-box;
-   line-height: var(--line-height);
+html {
+	box-sizing  : border-box;
+	line-height : var(--line-height);
 }
 
 * {
-   box-sizing: inherit;
+	box-sizing : inherit;
+	margin     : 0;
+	padding    : 0;
 }
 
 .hidden {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+	left     : -9999px;
+	position : absolute;
+	top      : -9999px;
 }
 
 h2 {
-   font-size: calc(1.4 * var(--fontsize-main));
-   background-color: inherit;
-   color: var(--color-primary);
-   border-bottom: 1px solid;
-   border-color: var(--color-secondary);
+	background-color : inherit;
+	border-bottom    : 1px solid;
+	border-color     : var(--color-secondary);
+	color            : var(--color-primary);
+	font-size        : calc(1.4 * var(--fontsize-main));
 }
 
 h3 {
-   color: var(--color-secondary);
-   border-bottom: 1px solid;
-   border-color: var(--color-highlight);
+	border-bottom : 1px solid;
+	border-color  : var(--color-highlight);
+	color         : var(--color-secondary);
 
-   font-size: calc(1.2 * var(--fontsize-main));
-   font-weight: 200;
+	font-size     : calc(1.2 * var(--fontsize-main));
+	font-weight   : 200;
 }
 
 body {
-   background-color: var(--color-white);
-   color: var(--color-black);
-   font-size: calc(1 * var(--fontsize-main));
-   margin: 0;
-   padding: 0;
+	background-color : var(--color-white);
+	color            : var(--color-black);
+	font-size        : calc(1 * var(--fontsize-main));
+	margin           : 0;
+	padding          : 0;
 }
 
 header {
-   display: flex;
-   align-items: center;
-   align-content: space-between;
+	align-content    : space-between;
+	align-items      : center;
+	background-color : var(--color-primary);
 
-   padding-left: 1rem;
-   padding-right: 1rem;
+	border-bottom    : 3px solid;
+	border-color     : var(--color-primary);
 
-   background-color: var(--color-primary);
-   border-bottom: 3px solid;
-   border-color: var(--color-primary);
+	display          : flex;
+	padding-left     : 1rem;
+	padding-right    : 1rem;
 }
 
 /*
 *   Helper Classes
 */
 
+.as-button {
+	background-color : transparent;
+	border           : 3px solid var(--color-primary);
+	border-radius    : 0.5rem;
+	display          : block;
+	font-size        : larger;
+	padding          : 1.5rem;
+}
+
+.button--primary {
+	background-color : var(--color-secondary);
+	border           : 3px solid var(--color-primary);
+	border-radius    : 0.5rem;
+	color            : var(--color-white);
+	font-size        : larger;
+	padding          : 1.5rem;
+}
+
+.as-button:hover,
+.as-button:focus {
+	border-color : var(--color-secondary);
+	transform    : translateY(-2px);
+}
+
+.as-button:active {
+	transform : translateY(1px);
+}
+
 .shadow {
-   box-shadow: 0.25rem 0.25rem 0.5rem var(--color-shadow);
+	box-shadow : 0.25rem 0.25rem 0.5rem var(--color-shadow);
 }
 
 .lift:hover {
-   transform: translate(0px, -1px);
+	transform : translate(0px, -1px);
 }
 
 .lift:active {
-   transform: translate(0px, 1px);
+	transform : translate(0px, 1px);
 }
 
 /*
@@ -82,42 +112,42 @@ header {
  */
 
 main {
-   margin: 0;
-   padding: 0;
-   border: none;
+	border  : none;
+	margin  : 0;
+	padding : 0;
 }
 
 .main-section--title {
-   text-align: center;
-   font-size: calc(1 * var(--fontsize-section-header));
-   font-weight: normal;
-   margin-bottom: calc(2 * var(--fontsize-section-header));
+	font-size     : calc(1 * var(--fontsize-section-header));
+	font-weight   : normal;
+	margin-bottom : calc(2 * var(--fontsize-section-header));
+	text-align    : center;
 }
 
-@media only screen and (min-width: 60em) {
-   .main-section--title {
-      font-size: calc(1.3 * var(--fontsize-section-header));
-   }
+@media only screen and (min-width : 60em) {
+	.main-section--title {
+		font-size : calc(1.3 * var(--fontsize-section-header));
+	}
 }
 
-@media only screen and (min-width: 90em) {
-   main {
-      margin-left: 10rem;
-      margin-right: 10rem;
-   }
+@media only screen and (min-width : 90em) {
+	main {
+		margin-left  : 10rem;
+		margin-right : 10rem;
+	}
 
-   .main-section--title {
-      font-size: calc(1.6 * var(--fontsize-section-header));
-   }
+	.main-section--title {
+		font-size : calc(1.6 * var(--fontsize-section-header));
+	}
 }
 
-@media only screen and (min-width: 120em) {
-   main {
-      margin-left: 15rem;
-      margin-right: 15rem;
-   }
+@media only screen and (min-width : 120em) {
+	main {
+		margin-left  : 15rem;
+		margin-right : 15rem;
+	}
 
-   .main-section--title {
-      font-size: calc(2 * var(--fontsize-section-header));
-   }
+	.main-section--title {
+		font-size : calc(2 * var(--fontsize-section-header));
+	}
 }

@@ -10,7 +10,7 @@
 
 .logo {
 	background-color : transparent;
-	margin           : calc(0.03 * var(--logo-size));
+	margin           : calc(0.05 * var(--logo-size));
 	width            : min-content;
 }
 
@@ -37,13 +37,11 @@
 
 .logo-title > h1,
 .logo-title > span {
-	align-self: center;
+	align-self  : center;
 	font-family : var(--font-family-mono);
 	font-size   : calc(0.5 * var(--logo-title-box-height));
-	font-weight: lighter;
-	margin      : 0;
-	padding    : 0 calc(0.1 * var(--logo-title-box-height));
-
+	font-weight : lighter;
+	padding     : 0 calc(0.3 * var(--logo-title-box-height));
 	position    : relative;
 	transition  : transform 0.8s;
 }
@@ -66,9 +64,6 @@
 	color       : var(--color-logo-primary);
 	font-family : "Inter", "Lato", sans-serif;
 	font-size   : calc(0.065 * var(--logo-size));
-
-	margin      : calc(0.02 * var(--logo-size)) auto calc(0.025 * var(--logo-size)) auto;
-	padding     : calc(0.015 * var(--logo-size));
-
+	margin-top  : calc(0.05 * var(--logo-size));
 	text-align  : center;
 }

@@ -1,56 +1,56 @@
 :root {
-   --form-internal-margin: 0.5rem;
+	--form-internal-margin : 0.5rem;
 }
 
 form {
-   background-color: var(--color-white);
-   border-radius: 0.4rem;
-   overflow: hidden;
-   width: max-content;
-   font-size: calc(1 * var(--font-size));
+	background-color : var(--color-white);
+	border-radius    : 0.4rem;
+	display          : flex;
+	flex-direction   : column;
+	flex-grow        : 1;
 
-   max-height: 90vh;
-   overflow-y: auto;
+	font-size        : calc(1 * var(--fontsize-main));
+	justify-content  : flex-start;
 
-   width: 100%;
-   max-width: 650px;
-   margin: 2rem auto 2rem auto;
-   display: flex;
-   flex-direction: column;
-   flex-grow: 1;
-   justify-content: flex-start;
+	margin           : 2rem auto 2rem auto;
+	max-height       : 90vh;
+	max-width        : 650px;
+	overflow         : hidden;
+	overflow-y       : auto;
+	width            : max-content;
 }
 
 form label {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
-   height: min-content;
-   margin: var(--form-internal-margin);
+	display   : flex;
+	flex-wrap : wrap;
+	height    : min-content;
+	margin    : var(--form-internal-margin);
+	width     : 100%;
 }
+
 form input,
 form textarea {
-   font-size: 1.8rem;
-   width: calc(100% - 2 * var(--form-internal-margin));
-   height: 3rem;
-   outline-offset: 2px;
-   outline-color: var(--color-primary);
+	border         : none;
+	font-size      : 1.8rem;
+	height         : 3rem;
+	outline-color  : var(--color-primary);
+	outline-offset : 2px;
 
-   border: none;
+	width          : calc(100% - 2 * var(--form-internal-margin));
 }
 
 form textarea {
-   height: 10rem;
+	height : 10rem;
 }
 
 form button {
-   margin-top: var(--large-space);
-   height: 3rem;
-   width: 20rem;
-   align-self: flex-end;
+	align-self       : flex-end;
+	background-color : var(--color-primary);
+	border           : none;
+	border-radius    : 0.4rem;
 
-   background-color: var(--color-primary);
-   color: var(--color-white);
-   border: none;
-   border-radius: 0.4rem;
+	color            : var(--color-white);
+	height           : 3rem;
+	margin-top       : 2rem;
+	width            : 20rem;
 }

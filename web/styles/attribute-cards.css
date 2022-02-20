@@ -31,6 +31,7 @@
 .attribute-card > h3 {
 	color      : var(--color-primary);
 	font-size  : calc(2 * var(--fontsize-main));
+	margin     : calc(0.1 * var(--card-size)) 0;
 	text-align : center;
 }
 

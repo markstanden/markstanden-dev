@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8"/>
     <meta
-            name="viewport"
             content="width=device-width, initial-scale=1.0"
+            name="viewport"
     />
     <title>markstanden.dev - Freelance development</title>
-    <link rel="stylesheet" href="styles/home.css"/>
+    <link href="styles/home.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -57,9 +57,9 @@
             <article class="code-section--card cs shadow">
                 <section class="code-card-section--title-block">
                     <h3 class="code-card--title">C# .NET Core</h3>
-                    <img class="code-image"
+                    <img alt="C-Sharp Icon"
+                         class="code-image"
                          src="assets/icons/c-sharp-c.svg"
-                         alt="C-Sharp Icon"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -75,9 +75,9 @@
                 <section class="code-card-section--title-block">
                     <h3 class="code-title">Java</h3>
                     <img
+                            alt="Java steaming mug logo"
                             class="code-image"
                             src="assets/icons/java.svg"
-                            alt="Java steaming mug logo"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -91,9 +91,9 @@
                 <section class="code-card-section--title-block">
                     <h3 class="code-title">TypeScript</h3>
                     <img
+                            alt="TypeScript TS Icon"
                             class="code-image"
                             src="assets/icons/ts.svg"
-                            alt="TypeScript TS Icon"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -117,9 +117,9 @@
             <article class="code-section--card js shadow">
                 <section class="code-card-section--title-block">
                     <h3 class="code-title">JavaScript</h3>
-                    <img class="code-image"
+                    <img alt="JavaScript Logo"
+                         class="code-image"
                          src="assets/icons/js.svg"
-                         alt="JavaScript Logo"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -136,9 +136,9 @@
                 <section class="code-card-section--title-block">
                     <h3 class="code-card--title">HTML 5</h3>
                     <img
+                            alt="HTML5 Icon"
                             class="code-image"
                             src="assets/icons/html5.svg"
-                            alt="HTML5 Icon"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -154,9 +154,9 @@
                 <section class="code-card-section--title-block">
                     <h3 class="code-card--title">CSS 3</h3>
                     <img
+                            alt="CSS3 Icon"
                             class="code-image"
                             src="assets/icons/css3.svg"
-                            alt="CSS3 Icon"
                     />
                 </section>
                 <section class="code-card-section--text">
@@ -174,7 +174,7 @@
     </section>
 
     <div class="section-divider">
-        <button class="button-contact shadow">
+        <button class="button--primary button--section-division shadow">
             I'd love to hear more
         </button>
     </div>
@@ -191,7 +191,7 @@
         <div class="attribute-cards--wrapper">
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Team Focussed</h3>
                 <p>
                     Having been a team member for my entire working
@@ -206,7 +206,7 @@
             </article>
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Motivated</h3>
                 <p>
                     Highly motivated by personal challenges,
@@ -222,7 +222,7 @@
             </article>
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Cool Head</h3>
                 <p>
                     Known for my patience and calm friendly manner, I
@@ -239,7 +239,7 @@
             </article>
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Testing First</h3>
                 <p>
                     Small re-usable blocks of code minimise wastage,
@@ -255,7 +255,7 @@
             </article>
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Functional Thinking</h3>
                 <p>
                     Avoiding the pitfalls and concurrency issues associated
@@ -269,7 +269,7 @@
             </article>
 
             <article class="attribute-card shadow">
-                <img src="assets/icons/printer.svg" alt="">
+                <img alt="" src="assets/icons/printer.svg">
                 <h3>Always learning</h3>
                 <p>
                     Driven by the love of problem-solving,
@@ -288,7 +288,7 @@
 
 
     <div class="section-divider">
-        <button class="button-contact shadow">
+        <button class="button--primary button--section-division shadow">
             Contact me
         </button>
     </div>
@@ -304,39 +304,47 @@
             written with care and attention to detail.
         </h2>
         <div class="project-cards--wrapper">
-            <a href="https://sudoku-verifier.onrender.com/">
-                <article class="project-card shadow">
-                    <section class="project-card--title">
-                        <h3>Sudoku Verifier</h3>
-                    </section>
-                    <section class="project-card--desc">
-                        <img src="assets/projects/sudoku-verifier.png"
-                             alt="A screenshot of the sudoku verifier application, showing an unsolved sudoku puzzle.">
-                        <p>
-                            Written in Java, this started as a challenge to produce a verifier for a sudoku grid,
-                            supplied
-                            as a 2D array.
-                            It was quickly developed using unit testing to provide almost instantaneous feedback on the
-                            written
-                            functions.
-                            I decided to extend the project and wrote a web front end, with a backend http server that
-                            validates
-                            and sanitises requests.
-                            The app also builds the html internally, allowing for dynamic grid creation.
-                        </p>
-                    </section>
-                    <section class="project-card--source-link">
-                        <a href="https://github.com/markstanden/sudoku-verifier">Source Code available on GitHub</a>
-                    </section>
-                </article>
 
-            </a>
+            <article class="project-card shadow">
+                <section class="project-card--title">
+                    <h3>Sudoku Verifier</h3>
+                </section>
+                <section class="project-card--desc">
+                    <img alt="A screenshot of the sudoku verifier application, showing an unsolved sudoku puzzle."
+                         src="assets/projects/sudoku-verifier.png">
+                    <p>
+                        Written in Java, this started as a challenge to produce a verifier for a sudoku grid,
+                        supplied
+                        as a 2D array.
+                        It was quickly developed using unit testing to provide almost instantaneous feedback on the
+                        written
+                        functions.
+                        I decided to extend the project and wrote a web front end, with a backend http server that
+                        validates
+                        and sanitises requests.
+                        The app also builds the html internally, allowing for dynamic grid creation.
+                    </p>
+                </section>
+                <section class="project-card--source-links">
+                    <a class="button--secondary button--project as-button shadow"
+                       href="https://sudoku-verifier.onrender.com/">
+                        <img src="assets/icons/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"/>
+                        <p>Hosted on Render.com</p>
+                    </a>
+                    <a class="button--secondary button--project as-button shadow"
+                       href="https://github.com/markstanden/sudoku-verifier">
+                        <img src="assets/icons/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png"/>
+                        <p>Source code on GitHub</p>
+                    </a>
+                </section>
+            </article>
+
         </div>
     </section>
 
 
     <div class="section-divider">
-        <button class="button-contact shadow">
+        <button class="button--primary button--section-division shadow">
             Contact me
         </button>
     </div>
