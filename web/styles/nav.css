@@ -3,12 +3,12 @@
 
 :root {
    --nav-fontsize: calc(1 * var(--fontsize-main));
+   --logo-size: 15rem;
+   --nav-size: 6rem;
 }
 
 header {
    flex-direction: column;
-   --logo-size: 15rem;
-   --nav-size: 6rem;
    padding-top: 1rem;
 }
 
@@ -78,14 +78,14 @@ header {
  * 120em    =  1920px
  */
 @media screen and (min-width: 30em) {
-   header {
+   :root {
       --nav-size: 8rem;
       --logo-size: 20rem;
    }
 }
 
 @media screen and (min-width: 40em) {
-   header {
+   :root {
       --nav-size: 9rem;
       --logo-size: 25rem;
    }

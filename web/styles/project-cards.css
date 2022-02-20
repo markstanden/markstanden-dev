@@ -1,0 +1,56 @@
+/*
+*   Personal Attribute Cards
+*/
+.project-cards--wrapper {
+	align-content   : space-around;
+	display         : flex;
+	flex-wrap       : nowrap;
+	justify-content : center;
+}
+
+.project-cards--wrapper:hover .project-card,
+.project-cards--wrapper:focus .project-card{
+	border-color: var(--color-secondary);
+}
+
+.project-cards--wrapper * {
+	text-decoration: none;
+}
+
+.project-card {
+	align-items      : center;
+	background-color : var(--color-white);
+	border           : 2px solid var(--color-primary);
+	border-radius    : calc(0.08 * var(--card-size));
+	color            : var(--color-primary);
+	display          : flex;
+	flex-direction   : column;
+	margin           : calc(0.15 * var(--card-size)) 0;
+	padding          : calc(0.1 * var(--card-size));
+}
+
+.project-card img {
+	width : calc(1 * var(--card-size));
+}
+
+.project-card > h3 {
+	color      : var(--color-white);
+	font-size  : calc(2 * var(--fontsize-main));
+	text-align : center;
+}
+
+.project-card > p {
+	font-size  : calc(1 * var(--fontsize-main));
+	text-align : center;
+}
+
+@media screen and (min-width : 400px) {
+	.project-card {
+		margin  : calc(0.25 * var(--card-size));
+		padding : calc(0.2 * var(--card-size));
+	}
+
+	.project-card > p {
+		text-align : left;
+	}
+}

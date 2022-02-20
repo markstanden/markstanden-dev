@@ -7,12 +7,12 @@
          content="width=device-width, initial-scale=1.0"
       />
       <title>markstanden.dev </title>
-      <link rel="stylesheet" href="./contact.css" />
+      <link rel="stylesheet" href="../../styles/feedback.css" />
    </head>
 
    <body>
       <header>
-         <div class="logo-outer">
+         <div class="logo">
             <a class="logo-link" href="/pages/contact/">
                <h1 class="logo-title">markstanden.dev</h1>
             </a>
@@ -23,11 +23,13 @@
                ><span class="nav-text">Home</span></a
             >
             <a
-               class="nav-item nav-item--current"
+               class="nav-item nav-item--primary"
                href="/pages/contact/"
                ><span class="nav-text">Contact</span></a
             >
-            <a class="nav-item" href="/pages/feedback/"
+            <a
+               class="nav-item nav-item--current"
+               href="/pages/feedback/"
                ><span class="nav-text">Feedback</span></a
             >
             <a
@@ -43,11 +45,11 @@
          <section class="contact-form-section">
             <form
                method="GET"
-               action="../success"
+               action="../success?feedback"
                name="contact-request"
                netlify
             >
-               <label for="name" class="contact-label">
+               <label for="name" class="feedback-label">
                   <p>Your Name</p>
                   <input
                      name="name"
@@ -57,7 +59,7 @@
                      placeholder="Your Name"
                   />
                </label>
-               <label for="email" class="contact-label">
+               <label for="email" class="feedback-label">
                   <p>Your email address</p>
                   <input
                      name="email"
@@ -68,27 +70,42 @@
                   />
                </label>
 
-               <label for="subject" class="contact-label">
-                  <p>The subject of the message</p>
+               <label for="project" class="feedback-label">
+                  <p>Your email address</p>
                   <input
-                     name="subject"
+                     name="project"
                      type="text"
-                     id="subject"
-                     aria-label="Message Subject"
-                     placeholder="We'd love to talk about your work"
+                     id="project"
+                     aria-label="The Project Name"
+                     placeholder="Project Name"
                   />
                </label>
 
-               <label for="message" class="contact-label">
-                  <p>Your message</p>
+               <label
+                  for="feedback-subject"
+                  class="feedback-label"
+               >
+                  <p>The subject of the feedback</p>
+                  <input
+                     name="feedback-subject"
+                     type="text"
+                     id="subject"
+                     aria-label="Message Subject"
+                     placeholder="Subject area of the feedback"
+                  />
+               </label>
+
+               <label
+                  for="feedback-message"
+                  class="contact-label"
+               >
+                  <p>Your Feedback</p>
                   <textarea
                      class="input"
                      name="message"
                      id="message"
                      aria-label="Main Message Content"
-                     rows="5"
-                     cols="50"
-                     placeholder="We've got loads of stuff we need you to build..."
+                     placeholder="You were great."
                   ></textarea>
                </label>
                <button type="submit">Submit</button>

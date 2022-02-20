@@ -1,7 +1,11 @@
-@import url(../../styles/global.css);
-@import url(./code.css);
-@import url(./attributes.css);
+@import url(global.css);
+@import url(code-cards.css);
+@import url(attribute-cards.css);
+@import url(project-cards.css);
 
+:root {
+   --card-size : 12rem;
+}
 .main-wrapper {
    position: relative;
 }

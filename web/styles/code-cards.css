@@ -1,0 +1,123 @@
+/*
+*   Coding Language Cards
+*/
+
+:root {
+	--code-background       : var(--color-white);
+	--code-header--fontsize : var(--fontsize-header);
+	--code-text--color      : var(--color-primary);
+	--code-text--fontsize   : calc(1.1 * var(--fontsize-main));
+}
+
+.html {
+	--code-color : rgba(187, 10, 33, 0.5);
+}
+
+.css {
+	--code-color : rgba(70, 87, 146, 0.5);
+}
+
+.js {
+	--code-color : rgba(227, 181, 5, 0.5);
+}
+
+.ts {
+	--code-color : rgba(98, 144, 200, 0.5);
+}
+
+.java {
+	/* #12664F */
+	--code-color : rgba(18, 102, 79, 0.5);
+}
+
+.cs {
+	--code-color : rgba(42, 30, 92, 0.5);
+}
+
+/* The entire Language section */
+.code-section {
+	font-family : var(--font-family-sans);
+	text-align  : center;
+}
+
+/* Handles the layout of the cards */
+.code-language-cards-wrapper {
+	align-content   : space-evenly;
+	display         : flex;
+	flex-wrap       : wrap;
+	justify-content : center;
+}
+
+/* Styles each card */
+.code-section--card {
+	background    : linear-gradient(60deg, var(--code-background) 55%, var(--code-color));
+	border        : 3px solid var(--color-primary);
+
+	border-radius : calc(0.05 * var(--card-size));
+
+	color         : var(--code-text--color);
+	margin        : calc(0.2 * var(--card-size));
+	min-height    : calc(1.1 * var(--card-size));
+	padding       : calc(0.15 * var(--card-size));
+
+	width         : 100vw;
+}
+
+/* The title blocks wrapping the title and icon */
+.code-card-section--title-block {
+	color       : var(--code-text--color);
+	font-weight : bold;
+	margin-top  : 0;
+	width       : 100%;
+}
+
+.code-card-section--title-block > h3 {
+	flex-grow : 2;
+	font-size : var(--code-header--fontsize);
+}
+
+.code-card-section--title-block > img {
+	border-radius : 1rem;
+	max-width     : calc(0.5 * var(--card-size));
+	min-width     : calc(0.25 * var(--card-size));
+}
+
+/* The text section wrapper */
+.code-card-section--text {
+	align-content  : space-between;
+	display        : flex;
+	flex-direction : column;
+}
+
+.code-card-section--text > p {
+	font-size : var(--code-text--fontsize);
+	height    : fit-content;
+}
+
+
+@media screen and (min-width : 600px) {
+	.code-section--card {
+		max-width  : calc(2.5 * var(--card-size));
+		text-align : left;
+	}
+
+	.code-card-section--title-block {
+		display         : flex;
+		flex-grow       : 1;
+		justify-content : space-between;
+	}
+
+	.code-card-section--title-block > h3 {
+		font-size     : calc(1.2 * var(--code-header--fontsize));
+		margin-bottom : 2.5rem;
+	}
+
+	.code-card-section--text {
+		min-height : calc(1 * var(--card-size));
+	}
+
+	.code-card-section--text > p {
+		font-size : calc(1.4 * var(--code-text--fontsize));
+		margin    : 1.5rem;
+	}
+}
