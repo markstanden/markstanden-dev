@@ -42,7 +42,8 @@
 	font-size   : calc(0.5 * var(--logo-title-box-height));
 	font-weight: lighter;
 	margin      : 0;
-	padding     : calc(0.15 * var(--logo-title-box-height));
+	padding    : 0 calc(0.1 * var(--logo-title-box-height));
+
 	position    : relative;
 	transition  : transform 0.8s;
 }
@@ -54,7 +55,7 @@
 
 .logo-title:hover > h1,
 .logo-title:hover > span {
-	transform : translateY(calc(-0.9 * (var(--logo-title-box-height))));
+	transform : translateY(calc(-1 * var(--line-height) / 2 * (var(--logo-title-box-height))));
 }
 
 .logo-title:active {

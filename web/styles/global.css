@@ -4,6 +4,7 @@
 
 html{
    box-sizing: border-box;
+   line-height: var(--line-height);
 }
 
 * {

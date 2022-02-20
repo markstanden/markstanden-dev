@@ -25,11 +25,13 @@
    --code-color: var(--color-secondary);
 
    --font-family-sans: 'Inter', Tahoma, Impact, sans-serif;
-   --font-family-mono: 'MonoLisa', 'Fira Code',
+   --font-family-mono: 'input', 'MonoLisa', 'Fira Code',
       'Lucida Mono', ui-monospace, Courier, monospace;
    --fontsize-main: 1rem;
    --fontsize-section-header: 2rem;
    --fontsize-header: 1.6rem;
+
+   --line-height: 1.6;
 }
 
 body {
