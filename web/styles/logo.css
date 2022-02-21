@@ -47,8 +47,7 @@
 }
 
 .logo-title:hover {
-	color     : var(--color-logo-secondary);
-	transform : translate(0px, -2px);
+	color : var(--color-logo-secondary);
 }
 
 .logo-title:hover > h1,

@@ -1,39 +1,39 @@
 :root {
-   /* Colour palette via coolors.co
-   https://coolors.co/0a0f0d-2a1e5c-6290c8-12664f-bb0a21-ef6f6c-e3b505-bdbace-c4cbca-ededf4
-   */
-   --paradise-pink: #ee4266ff;
-   --light-coral: #ef6f6c;
-   --russian-violet: #2a1e5cff;
-   --lavender-grey: #bdbace;
-   --rich-black-fogra-39: #0a0f0dff;
-   --silver-sand: #c4cbcaff;
-   --ghost-white: #ededf4;
-   --light-sea-green: #3cbbb1ff;
+	/* Colour palette via coolors.co
+	https://coolors.co/0a0f0d-2a1e5c-6290c8-12664f-bb0a21-ef6f6c-e3b505-bdbace-c4cbca-ededf4
+	*/
+	--color-black             : var(--rich-black-fogra-39);
+	--rich-black-fogra-39     : #0a0f0dff;
+	--code-color              : var(--color-secondary);
+	--light-coral             : #ef6f6c;
+	--font-family-mono        : "input", "MonoLisa", "Fira Code",
+	"Lucida Mono", ui-monospace, Courier, monospace;
+	--font-family-sans        : "Inter", Tahoma, Impact, sans-serif;
+	--color-grey              : var(--silver-sand);
+	--lavender-grey           : #d1cfdd;
+	--fontsize-header         : 1.6rem;
+	/* Colours */
+	--line-height             : 1.6;
+	--color-highlight         : var(--lavender-web);
+	--fontsize-main           : 1rem;
 
-   /* Colours */
-   --color-primary: var(--russian-violet);
-   --color-secondary: var(--light-coral);
-   --color-highlight: var(--lavender-grey);
 
+	--paradise-pink           : #ee4266ff;
+	--color-primary           : var(--russian-violet);
+	--silver-sand             : #c4cbcaff;
+	--light-sea-green         : #3cbbb1ff;
 
-   --color-white: var(--ghost-white);
-   --color-black: var(--rich-black-fogra-39);
-   --color-grey: var(--silver-sand);
-   --color-shadow: #aaaaaa;
+	--color-secondary         : var(--light-coral);
 
-   --code-color: var(--color-secondary);
+	--fontsize-section-header : 2rem;
+	--color-shadow            : #aaaaaa;
+	--russian-violet          : #2a1e5cff;
+	--lavender-web            : #dddbe6;
+	--color-white             : var(--ghost-white);
 
-   --font-family-sans: 'Inter', Tahoma, Impact, sans-serif;
-   --font-family-mono: 'input', 'MonoLisa', 'Fira Code',
-      'Lucida Mono', ui-monospace, Courier, monospace;
-   --fontsize-main: 1rem;
-   --fontsize-section-header: 2rem;
-   --fontsize-header: 1.6rem;
-
-   --line-height: 1.6;
+	--ghost-white             : #ededf4;
 }
 
 body {
-   font-family: var(--font-family-sans);
+	font-family : var(--font-family-sans);
 }

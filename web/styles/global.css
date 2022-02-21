@@ -21,10 +21,8 @@ html {
 
 h2 {
 	background-color : inherit;
-	border-bottom    : 1px solid;
-	border-color     : var(--color-secondary);
 	color            : var(--color-primary);
-	font-size        : calc(1.4 * var(--fontsize-main));
+	font-size        : calc(1.5 * var(--fontsize-main));
 }
 
 h3 {
@@ -32,8 +30,8 @@ h3 {
 	border-color  : var(--color-highlight);
 	color         : var(--color-secondary);
 
-	font-size     : calc(1.2 * var(--fontsize-main));
-	font-weight   : 200;
+	font-size     : calc(1.3 * var(--fontsize-main));
+	font-weight   : 400;
 }
 
 body {
