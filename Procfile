@@ -1,1 +1,1 @@
-web: ./build/install/api/bin/api
+web: ./build/install/dev.markstanden.api/bin/dev.markstanden.api
