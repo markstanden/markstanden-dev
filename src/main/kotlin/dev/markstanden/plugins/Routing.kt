@@ -9,6 +9,11 @@ import processFeedbackForm
 fun Application.configureRouting() {
 
     routing {
+
+        get("/") {
+            call.respondText { "OK" }
+        }
+
         post("/api/feedback") {
             val formParameters = call.receiveParameters()
             val response = processFeedbackForm(formParameters)
