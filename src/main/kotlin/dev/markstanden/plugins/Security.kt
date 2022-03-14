@@ -2,17 +2,6 @@ package dev.markstanden.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
-import io.ktor.server.html.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
-import kotlinx.html.FormEncType
-import kotlinx.html.FormMethod
-import kotlinx.html.body
-import kotlinx.html.form
-import kotlinx.html.p
-import kotlinx.html.passwordInput
-import kotlinx.html.submitInput
-import kotlinx.html.textInput
 
 
 fun Application.configureSecurity() {
@@ -32,7 +21,7 @@ fun Application.configureSecurity() {
         }
     }
 
-    routing {
+    /*routing {
         authenticate("auth-form") {
             post("/protected/feedback") {
                 call.respondText("Hello, ${call.principal<UserIdPrincipal>()?.name}!")
@@ -59,5 +48,5 @@ fun Application.configureSecurity() {
                 }
             }
         }
-    }
+    }*/
 }
