@@ -9,7 +9,6 @@ import processFeedbackForm
 fun Application.configureRouting() {
 
     routing {
-
         get("/") {
             call.respondText { "OK" }
         }

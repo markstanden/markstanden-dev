@@ -44,9 +44,8 @@
     <h2 class="main-section--title">Get in touch...</h2>
     <section class="contact-form-section">
         <form
-                action="http://localhost:8080/api/feedback"
+                action="http://localhost:8080/protected/feedback"
                 method="POST"
-                netlify
         >
             <!-- <form
            method="GET"
@@ -64,6 +63,16 @@
                         type="text"
                 />
             </label>
+            <label class="feedback-label" for="password">
+                <p>Your Password</p>
+                <input
+                        aria-label="Your Password"
+                        id="password"
+                        name="password"
+                        placeholder="Your Password"
+                        type="password"
+                />
+            </label>
             <label class="feedback-label" for="email">
                 <p>Your email address</p>
                 <input
@@ -76,7 +85,7 @@
             </label>
 
             <label class="feedback-label" for="project">
-                <p>Your email address</p>
+                <p>Your project name</p>
                 <input
                         aria-label="The Project Name"
                         id="project"
