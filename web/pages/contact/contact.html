@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta
-         name="viewport"
-         content="width=device-width, initial-scale=1.0"
-      />
-      <title>markstanden.dev </title>
-      <link rel="stylesheet" href="../../styles/contact.css" />
-   </head>
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, initial-scale=1.0"
+            name="viewport"
+    />
+    <title>markstanden.dev </title>
+    <link href="../../styles/contact.css" rel="stylesheet"/>
+</head>
 
-   <body>
-      <header>
-         <div class="logo">
-            <a class="logo-link" href="/pages/contact/">
-               <h1 class="logo-title">markstanden.dev</h1>
-            </a>
-            <p class="logo-sub">think twice code once.</p>
-         </div>
-         <nav class="nav-link-group">
-            <a class="nav-item" href="/"
-               ><span class="nav-text">Home</span></a
-            >
-            <a
-               class="nav-item nav-item--current"
-               href="/pages/contact/"
-               ><span class="nav-text">Contact</span></a
-            >
-            <a class="nav-item" href="/pages/feedback/"
-               ><span class="nav-text">Feedback</span></a
-            >
-            <a
-               class="nav-item"
-               href="https://if-interested.com"
-               ><span class="nav-text">Blog</span></a
-            >
-         </nav>
-      </header>
+<body>
+<header>
+    <div class="logo">
+        <a href="pages/contact/contact.html">
+            <div class="logo-title">
+                <h1>markstanden.dev</h1>
+                <span>Contact</span>
+            </div>
+        </a>
+        <p>think twice code once.</p>
+    </div>
+    <nav class="nav-link-group">
+        <a class="nav-item nav-item--current" href="/">
+            <span class="nav-text">Home</span>
+        </a>
+        <a class="nav-item nav-item--primary" href="pages/contact/contact.html">
+            <span class="nav-text">Contact</span>
+        </a>
+        <a class="nav-item" href="pages/feedback/feedback.html">
+            <span class="nav-text">Feedback</span>
+        </a>
+        <a class="nav-item" href="https://if-interested.com">
+            <span class="nav-text">Blog</span>
+        </a>
+        <a class="nav-item" href="https://github.com/markstanden">
+            <span class="nav-text">Blog</span>
+        </a>
+    </nav>
+</header>
 
-      <div class="main-wrapper">
-         <h2 class="main-section--title">Get in touch...</h2>
-         <section class="contact-form-section">
-            <form
-               method="GET"
-               action="../success"
-               name="contact-request"
-               netlify
+<div class="main-wrapper">
+    <h2 class="main-section--title">Get in touch...</h2>
+    <section class="contact-form-section">
+        <form
+                action="../success"
+                method="GET"
+                name="contact-request"
+                netlify
+        >
+            <label class="contact-label" for="name">
+                <p>Your Name</p>
+                <input
+                        aria-label="Your Name"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        type="text"
+                />
+            </label>
+            <label class="contact-label" for="email">
+                <p>Your email address</p>
+                <input
+                        aria-label="Your Email Address"
+                        id="email"
+                        name="email"
+                        placeholder="email@address.com"
+                        type="email"
+                />
+            </label>
+
+            <label class="contact-label" for="subject">
+                <p>The subject of the message</p>
+                <input
+                        aria-label="Message Subject"
+                        id="subject"
+                        name="subject"
+                        placeholder="We'd love to talk about your work"
+                        type="text"
+                />
+            </label>
+
+            <label class="contact-label" for="message">
+                <p>Your message</p>
+                <textarea
+                        aria-label="Main Message Content"
+                        class="input"
+                        cols="50"
+                        id="message"
+                        name="message"
+                        placeholder="We've got loads of stuff we need you to build..."
+                        rows="5"
+                ></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Other Links</h2>
+        <ul>
+            <li
+            ><a href="github.com/markstanden"
+            >Github</a
+            ></li
             >
-               <label for="name" class="contact-label">
-                  <p>Your Name</p>
-                  <input
-                     name="name"
-                     id="name"
-                     type="text"
-                     aria-label="Your Name"
-                     placeholder="Your Name"
-                  />
-               </label>
-               <label for="email" class="contact-label">
-                  <p>Your email address</p>
-                  <input
-                     name="email"
-                     type="email"
-                     id="email"
-                     aria-label="Your Email Address"
-                     placeholder="email@address.com"
-                  />
-               </label>
-
-               <label for="subject" class="contact-label">
-                  <p>The subject of the message</p>
-                  <input
-                     name="subject"
-                     type="text"
-                     id="subject"
-                     aria-label="Message Subject"
-                     placeholder="We'd love to talk about your work"
-                  />
-               </label>
-
-               <label for="message" class="contact-label">
-                  <p>Your message</p>
-                  <textarea
-                     class="input"
-                     name="message"
-                     id="message"
-                     aria-label="Main Message Content"
-                     rows="5"
-                     cols="50"
-                     placeholder="We've got loads of stuff we need you to build..."
-                  ></textarea>
-               </label>
-               <button type="submit">Submit</button>
-            </form>
-         </section>
-
-         <footer>
-            <h2>Other Links</h2>
-            <ul>
-               <li
-                  ><a href="github.com/markstanden"
-                     >Github</a
-                  ></li
-               >
-               <li
-                  ><a href="if-interested.com"
-                     >Development Blog</a
-                  ></li
-               >
-               <li
-                  ><a href="aboutme.markstanden.dev"
-                     >more about me...</a
-                  ></li
-               >
-            </ul>
-         </footer>
-      </div>
-   </body>
+            <li
+            ><a href="if-interested.com"
+            >Development Blog</a
+            ></li
+            >
+            <li
+            ><a href="aboutme.markstanden.dev"
+            >more about me...</a
+            ></li
+            >
+        </ul>
+    </footer>
+</div>
+</body>
 </html>
