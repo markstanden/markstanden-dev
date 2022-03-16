@@ -7,13 +7,13 @@
             name="viewport"
     />
     <title>markstanden.dev </title>
-    <link href="../../styles/feedback.css" rel="stylesheet"/>
+    <link href="/styles/contact.css" rel="stylesheet"/>
 </head>
 
 <body>
 <header>
     <div class="logo">
-        <a href="pages/contact/contact.html">
+        <a href="/pages/contact.html">
             <div class="logo-title">
                 <h1>markstanden.dev</h1>
                 <span>Contact</span>
@@ -22,38 +22,33 @@
         <p>think twice code once.</p>
     </div>
     <nav class="nav-link-group">
-        <a class="nav-item nav-item--current" href="/">
+        <a class="nav-item nav-item--current" href="/pages/home.html">
             <span class="nav-text">Home</span>
         </a>
-        <a class="nav-item nav-item--primary" href="pages/contact/contact.html">
+        <a class="nav-item nav-item--primary" href="/pages/contact.html">
             <span class="nav-text">Contact</span>
         </a>
-        <a class="nav-item" href="pages/feedback/feedback.html">
+        <a class="nav-item" href="/pages/feedback.html">
             <span class="nav-text">Feedback</span>
         </a>
         <a class="nav-item" href="https://if-interested.com">
             <span class="nav-text">Blog</span>
         </a>
         <a class="nav-item" href="https://github.com/markstanden">
-            <span class="nav-text">Blog</span>
+            <span class="nav-text">GitHub</span>
         </a>
     </nav>
 </header>
-
 <div class="main-wrapper">
     <h2 class="main-section--title">Get in touch...</h2>
     <section class="contact-form-section">
         <form
-                action="http://localhost:8080/protected/feedback"
-                method="POST"
+                action="success"
+                method="GET"
+                name="contact-request"
+                netlify
         >
-            <!-- <form
-           method="GET"
-           action="../success?feedback"
-           name="contact-request"
-           netlify
-        >-->
-            <label class="feedback-label" for="name">
+            <label class="contact-label" for="name">
                 <p>Your Name</p>
                 <input
                         aria-label="Your Name"
@@ -63,17 +58,7 @@
                         type="text"
                 />
             </label>
-            <label class="feedback-label" for="password">
-                <p>Your Password</p>
-                <input
-                        aria-label="Your Password"
-                        id="password"
-                        name="password"
-                        placeholder="Your Password"
-                        type="password"
-                />
-            </label>
-            <label class="feedback-label" for="email">
+            <label class="contact-label" for="email">
                 <p>Your email address</p>
                 <input
                         aria-label="Your Email Address"
@@ -84,42 +69,27 @@
                 />
             </label>
 
-            <label class="feedback-label" for="project">
-                <p>Your project name</p>
-                <input
-                        aria-label="The Project Name"
-                        id="project"
-                        name="project"
-                        placeholder="Project Name"
-                        type="text"
-                />
-            </label>
-
-            <label
-                    class="feedback-label"
-                    for="feedback-subject"
-            >
-                <p>The subject of the feedback</p>
+            <label class="contact-label" for="subject">
+                <p>The subject of the message</p>
                 <input
                         aria-label="Message Subject"
                         id="subject"
-                        name="feedback-subject"
-                        placeholder="Subject area of the feedback"
+                        name="subject"
+                        placeholder="We'd love to talk about your work"
                         type="text"
                 />
             </label>
 
-            <label
-                    class="contact-label"
-                    for="feedback-message"
-            >
-                <p>Your Feedback</p>
+            <label class="contact-label" for="message">
+                <p>Your message</p>
                 <textarea
                         aria-label="Main Message Content"
                         class="input"
+                        cols="50"
                         id="message"
                         name="message"
-                        placeholder="You were great."
+                        placeholder="We've got loads of stuff we need you to build..."
+                        rows="5"
                 ></textarea>
             </label>
             <button type="submit">Submit</button>
