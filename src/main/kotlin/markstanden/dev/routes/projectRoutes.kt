@@ -2,6 +2,7 @@ package markstanden.dev.routes
 
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.freemarker.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import markstanden.dev.models.projects
@@ -10,7 +11,7 @@ fun Route.projectRouting() {
     route("/projects") {
         get {
             if (projects.isNotEmpty()) {
-                call.respond(projects)
+                call.respond(FreeMarkerContent("index.ftl", mapOf("projects" to projects)))
             }
             else {
                 call.respondText(status = HttpStatusCode.NoContent) { "No projects found" }
@@ -25,6 +26,14 @@ fun Route.projectRouting() {
                         status = HttpStatusCode.NotFound) { "No Customer with id: $id" }
             call.respond(project)
 
+        }
+
+        get("{id}/edit"){
+            //edit
+        }
+
+        post("{id}"){
+            //update/delete
         }
     }
 }
