@@ -1,6 +1,9 @@
 <#-- @ftlvariable name="projects" type="kotlin.collections.List<dev.markstanden.models.Project>" -->
 <#import  "_layout.ftl" as layout>
-<@layout.header>
+<#import  "_divider.ftl" as divider>
+<#import  "_projectCards.ftl" as projectCards>
+
+<@layout.general cssFile="home.css">
     <!-----------------------------------------
     |  Programming language competency cards   |
     ------------------------------------------->
@@ -131,11 +134,9 @@
         </div>
     </section>
 
-    <div class="section-divider">
-        <button class="button--primary button--section-division shadow">
-            I'd love to hear more
-        </button>
-    </div>
+    <@divider.withButton>
+        I'd love to hear more
+    </@divider.withButton>
 
 
     <!-----------------------------------------
@@ -245,61 +246,14 @@
     </section>
 
 
-    <div class="section-divider">
-        <button class="button--primary button--section-division shadow">
-            Contact me
-        </button>
-    </div>
+    <@divider.withButton>
+        Contact me
+    </@divider.withButton>
 
+    <@projectCards.cards projects/>
 
-    <!-----------------------------------------
-    |  Interesting Projects and Achievements.  |
-    ------------------------------------------->
+    <@divider.withButton>
+        Contact me
+    </@divider.withButton>
 
-    <section class="main-section project-section">
-        <h2 class="main-section--title">
-            Maintainable, tested code,
-            written with care and attention to detail.
-        </h2>
-        <div class="project-cards--wrapper">
-
-            <#list projects?reverse as project>
-                <article class="project-card shadow">
-                    <section class="project-card--title">
-                        <h3>${project.title}</h3>
-                    </section>
-                    <section class="project-card--desc">
-                        <img alt="${project.imageAlt}"
-                             src="${project.imageLink}">
-                        <p>
-                            ${project.body}
-                        </p>
-                    </section>
-                    <section class="project-card--source-links">
-                        <a class="button--secondary button--project as-button shadow"
-                           href="${project.hostLink}">
-                            <img src="${project.hostIcon}"
-                                 alt="${project.hostIconAlt}"/>
-                            <p>View Application</p>
-                        </a>
-                        <a class="button--secondary button--project as-button shadow"
-                           href="${project.srcLink}">
-                            <img src="${project.srcIcon}"
-                                 alt="${project.srcIconAlt}"/>
-                            <p>View Source Code</p>
-                        </a>
-                    </section>
-                </article>
-            </#list>
-
-
-        </div>
-    </section>
-
-
-    <div class="section-divider">
-        <button class="button--primary button--section-division shadow">
-            Contact me
-        </button>
-    </div>
-</@layout.header>
+</@layout.general>

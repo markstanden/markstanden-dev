@@ -11,7 +11,7 @@ fun Route.projectRouting() {
     route("/projects") {
         get {
             if (projects.isNotEmpty()) {
-                call.respond(FreeMarkerContent("index.ftl", mapOf("projects" to projects)))
+                call.respond(FreeMarkerContent("projects.ftl", mapOf("projects" to projects)))
             }
             else {
                 call.respondText(status = HttpStatusCode.NoContent) { "No projects found" }

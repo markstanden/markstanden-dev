@@ -29,7 +29,7 @@ val sudokuProject = Project.newProject(
                 Written in Java, this started as a challenge to produce a verifier for a sudoku grid, supplied as a 2D array.
                 It was quickly developed using unit testing to provide almost instantaneous feedback on the written functions.
                 I decided to extend the project and wrote a web front end, with a backend http server that validates and sanitises requests.
-                The app also builds the html internally, allowing for dynamic grid creation.""".trimMargin(),
+                The app also builds the html internally, allowing for dynamic grid creation.""".trimIndent(),
         imageLink = "/static/images/projects/sudoku-verifier.png",
         imageAlt = "A screenshot of the sudoku verifier application, showing an unsolved sudoku puzzle.",
         hostLink = "https://sudoku-verifier.onrender.com/",
@@ -44,7 +44,7 @@ val homepageProject = Project.newProject(
         title = "markstanden.dev HomePage",
         body = """
                Initially written in HTML/CSS and hosted on netlify, my homepage has undergone a re-write in kotlin, with templating and a RESTful API backend for feedback and contact forms.
-               """.trimMargin(),
+               """.trimIndent(),
         imageLink = "/static/images/projects/ms-dev.png",
         imageAlt = "A screenshot of the homepage header section",
         hostLink = "https://markstanden.dev/",
