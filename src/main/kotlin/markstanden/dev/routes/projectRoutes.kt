@@ -23,9 +23,8 @@ fun Route.projectRouting() {
                         status = HttpStatusCode.BadRequest) { "Missing or malformed Project ID" }
             val project =
                 projects.find { it.id == id.toInt() } ?: return@get call.respondText(
-                        status = HttpStatusCode.NotFound) { "No Customer with id: $id" }
+                        status = HttpStatusCode.NotFound) { "No project with id: $id" }
             call.respond(project)
-
         }
 
         get("{id}/edit"){

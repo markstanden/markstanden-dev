@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="projects" type="kotlin.collections.List<dev.markstanden.models.Project>" -->
 <#macro cards projects>
     <!-----------------------------------------
     |  Interesting Projects and Achievements.  |
@@ -44,6 +45,4 @@
 
 </#macro>
 
-
-<#-- @ftlvariable name="projects" type="kotlin.collections.List<dev.markstanden.models.Project>" -->
 <@cards projects/>

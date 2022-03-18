@@ -9,36 +9,49 @@
 	--code-text--fontsize   : calc(1.1 * var(--fontsize-main));
 }
 
+
 .html {
 	--code-color : rgba(187, 10, 33, 0.5);
 }
+
 
 .css {
 	--code-color : rgba(70, 87, 146, 0.5);
 }
 
+
 .js {
 	--code-color : rgba(227, 181, 5, 0.5);
 }
 
+
 .ts {
 	--code-color : rgba(98, 144, 200, 0.5);
 }
+
 
 .java {
 	/* #12664F */
 	--code-color : rgba(18, 102, 79, 0.5);
 }
 
+
 .cs {
 	--code-color : rgba(42, 30, 92, 0.5);
 }
+
+
+.kotlin {
+	--code-color : rgba(108, 86, 200, 0.5);
+}
+
 
 /* The entire Language section */
 .code-section {
 	font-family : var(--font-family-sans);
 	text-align  : center;
 }
+
 
 /* Handles the layout of the cards */
 .code-language-cards-wrapper {
@@ -47,6 +60,7 @@
 	flex-wrap       : wrap;
 	justify-content : center;
 }
+
 
 /* Styles each card */
 .code-section--card {
@@ -60,6 +74,7 @@
 	width         : 100vw;
 }
 
+
 /* The title blocks wrapping the title and icon */
 .code-card-section--title-block {
 	color       : var(--code-text--color);
@@ -67,11 +82,13 @@
 	width       : 100%;
 }
 
+
 .code-card-section--title-block > h3 {
 	flex-grow     : 2;
 	font-size     : var(--code-header--fontsize);
 	margin-bottom : calc(0.1 * var(--card-size));
 }
+
 
 .code-card-section--title-block > img {
 	border-radius : 1rem;
@@ -80,12 +97,14 @@
 	min-width     : calc(0.2 * var(--card-size));
 }
 
+
 /* The text section wrapper */
 .code-card-section--text {
 	align-content  : space-between;
 	display        : flex;
 	flex-direction : column;
 }
+
 
 .code-card-section--text > p {
 	font-size : var(--code-text--fontsize);
@@ -99,11 +118,13 @@
 		text-align : left;
 	}
 
+
 	.code-card-section--title-block {
 		display         : flex;
 		flex-grow       : 1;
 		justify-content : space-between;
 	}
+
 
 	.code-card-section--title-block > h3 {
 		align-self    : center;
@@ -112,9 +133,11 @@
 		margin-left   : calc(0.1 * var(--card-size));
 	}
 
+
 	.code-card-section--text {
 		min-height : calc(1 * var(--card-size));
 	}
+
 
 	.code-card-section--text > p {
 		font-size : calc(1.4 * var(--code-text--fontsize));
