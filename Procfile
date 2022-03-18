@@ -1,1 +1,1 @@
-web: ./build/install/dev.markstanden.static/bin/dev.markstanden.static
+web: ./build/install/static/bin/static
