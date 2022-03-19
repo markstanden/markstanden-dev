@@ -10,10 +10,9 @@ WORKDIR /app
 RUN ./gradlew
 
 #FROM openjdk:alpine
-#COPY --from=build /app/build/libs/* /app/
+COPY --from=build /app/build/libs/* /app/
 #COPY --from=build /app/src/main/resources/files/css* /static/css/
 #COPY --from=build /app/src/main/resources/files/images* /static/images/
 
 EXPOSE 8080
-#ENTRYPOINT ["java","-jar","/app/markstanden.dev-0.0.1-all.jar"]
-ENTRYPOINT ["./build/install/markstanden.dev/bin/markstanden.dev"]
+ENTRYPOINT ["java","-jar","/app/markstanden.dev-0.0.1-all.jar"]
