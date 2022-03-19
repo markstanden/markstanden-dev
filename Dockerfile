@@ -17,4 +17,4 @@ COPY /build/libs/* /app/
 #COPY --from=build /app/src/main/resources/files/images* /static/images/
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app/markstanden.dev-0.0.1-all.jar"]
+ENTRYPOINT ["java","-jar","markstanden.dev-0.0.1-all.jar"]
