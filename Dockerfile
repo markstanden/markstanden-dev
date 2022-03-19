@@ -6,8 +6,10 @@ ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
 
 WORKDIR /app
-# RUN ./gradlew shadowJar
-RUN ./gradlew
+RUN ./gradlew shadowJar
+#RUN ./gradlew
+
+WORKDIR /app
 COPY /build/libs/* /app/
 
 #FROM openjdk:alpine
