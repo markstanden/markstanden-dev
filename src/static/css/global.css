@@ -1,6 +1,6 @@
-@import url(./theme.css);
-@import url(./nav.css);
-@import url(./footer.css);
+@import url(theme.css);
+@import url(nav.css);
+@import url(footer.css);
 
 html {
 	box-sizing  : border-box;

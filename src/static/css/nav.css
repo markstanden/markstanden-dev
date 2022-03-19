@@ -1,5 +1,5 @@
-@import url(./global.css);
-@import url(./logo.css);
+@import url(global.css);
+@import url(logo.css);
 
 :root {
    --nav-fontsize: calc(1 * var(--fontsize-main));
