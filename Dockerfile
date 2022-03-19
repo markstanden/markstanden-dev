@@ -1,10 +1,10 @@
 FROM openjdk:alpine AS build
 RUN apk update
 RUN apk add git
-RUN mkdir /app
-WORKDIR /app
-RUN git clone https://github.com/markstanden/markstanden-dev .
-RUN ./gradlew shadowJar
+
+ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main version.json
+RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
+RUN /app/gradlew shadowJar
 
 FROM openjdk:alpine
 COPY --from=build /app/build/libs/* /app/
