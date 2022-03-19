@@ -6,7 +6,7 @@
     <!DOCTYPE html>
     <html lang="en">
 
-    <@head.main pageTitle "/styles/${cssFile}"/>
+    <@head.main pageTitle "/static/css/${cssFile}"/>
 
     <body>
     <@header.header/>
