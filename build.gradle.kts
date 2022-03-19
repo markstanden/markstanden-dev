@@ -54,5 +54,5 @@ tasks.register<Copy>("copyReportsDirForArchiving2") {
     from(layout.buildDirectory) {
         include("files/**")
     }
-    into(layout.buildDirectory.dir("resources/files"))
+    into(layout.buildDirectory.dir("static"))
 }
