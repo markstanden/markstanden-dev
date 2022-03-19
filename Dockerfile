@@ -1,11 +1,11 @@
 FROM alpine AS build
-RUN mkdir /usr/src/app/
-WORKDIR /usr/src/app/
+RUN mkdir /app/
+WORKDIR /app/
 RUN git clone https://github.com/markstanden/markstanden-dev .
 RUN ./gradlew :shadowJar
 
 FROM openjdk
-COPY --from=build /usr/src/app/build/libs/* /usr/app/
+COPY --from=build /app/build/libs/* /app/
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/app/markstanden.dev-0.0.1-all.jar"]
+ENTRYPOINT ["java","-jar","/app/markstanden.dev-0.0.1-all.jar"]
