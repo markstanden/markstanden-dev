@@ -6,15 +6,13 @@ plugins {
     application
     kotlin("jvm") version "1.6.10"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.6.10"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 group = "markstanden.dev"
 version = "0.0.1"
 application {
     mainClass.set("io.ktor.server.netty.EngineMain")
-
-    val isDevelopment: Boolean = project.ext.has("development")
-    applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 
 repositories {
@@ -34,9 +32,12 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }
 
-/**
- * Heroku build stage
- */
 tasks {
+    shadowJar {
+        manifest {
+            attributes(Pair("Main-Class", "io.ktor.server.netty.EngineMain"))
+        }
+    }
+    /** Heroku build stage */
     create("stage").dependsOn("installDist")
 }
