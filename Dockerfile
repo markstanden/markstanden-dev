@@ -4,7 +4,7 @@ ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
 
 WORKDIR /app
-RUN ./gradlew startShadowScripts --no-daemon
+RUN ./gradlew build --no-daemon
 
 FROM openjdk AS prod
 COPY --from=build /app/build/libs/*.jar /app/
