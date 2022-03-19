@@ -1,1 +1,1 @@
-web: ./build/install/static-shadow/bin/static
+web: ./gradlew :runShadow
