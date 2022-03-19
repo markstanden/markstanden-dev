@@ -12,7 +12,7 @@ plugins {
 group = "markstanden.dev"
 version = "0.0.1"
 application {
-    mainClass.set("io.ktor.server.netty.EngineMain")
+    mainClass.set("io.ktor.server.cio.EngineMain")
 }
 
 repositories {
@@ -36,7 +36,7 @@ dependencies {
 tasks {
     shadowJar {
         manifest {
-            attributes(Pair("Main-Class", "io.ktor.server.netty.EngineMain"))
+            attributes(Pair("Main-Class", "io.ktor.server.cio.EngineMain"))
         }
     }
     /** Heroku build stage */
