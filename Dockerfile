@@ -10,7 +10,7 @@ RUN ./gradlew shadowJar
 #RUN ./gradlew
 
 WORKDIR /app
-COPY /build/libs/* /app/
+COPY ./build/libs/* /app/
 
 #FROM openjdk:alpine
 
