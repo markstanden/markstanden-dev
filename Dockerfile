@@ -6,17 +6,13 @@ ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
 
 WORKDIR /app
-RUN ./gradlew shadowJar
-#RUN ./gradlew
+RUN ./gradlew shadowJar --no-daemon
 
 WORKDIR /app
-COPY ./build/libs/* /app/
+COPY ./build/libs/*.jar /app/
 
-#FROM openjdk:alpine
+#FROM openjdk:alpine AS prod
+#COPY --from=build /app/build/libs/*.jar /app/
 
-#COPY --from=build /app/build/libs/* /app/
-#COPY --from=build /app/src/main/resources/files/css* /static/css/
-#COPY --from=build /app/src/main/resources/files/images* /static/images/
-
-EXPOSE 8080
+EXPOSE 8080:8080
 ENTRYPOINT ["java","-jar","markstanden.dev-0.0.1-all.jar"]
