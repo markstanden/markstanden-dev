@@ -6,7 +6,7 @@ ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
 
 WORKDIR /app
-RUN ./gradlew shadowJar --no-daemon
+RUN ./gradlew --no-daemon
 
 WORKDIR /app
 RUN cp ./build/libs/*.jar /app/
