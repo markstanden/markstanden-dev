@@ -11,6 +11,9 @@ fun Application.configureRouting() {
         static("/static") {
             resources("files")
         }
+        static("/static/css") {
+            resources("files/css")
+        }
 
         homepageRouting()
     }

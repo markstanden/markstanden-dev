@@ -41,11 +41,3 @@ tasks {
     /** Heroku build stage */
     create("stage").dependsOn("installDist")
 }
-
-sourceSets {
-    main {
-        resources {
-            srcDirs("src/main/resources")
-        }
-    }
-}
