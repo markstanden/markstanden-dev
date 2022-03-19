@@ -1,7 +1,3 @@
-@import url(static/css/code-cards.css);
-@import url(static/css/attribute-cards.css);
-@import url(static/css/project-cards.css);
-
 :root {
 	--card-size : 12rem;
 }
