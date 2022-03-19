@@ -14,13 +14,13 @@ val projects = listOf(
                 It was quickly developed using unit testing to provide almost instantaneous feedback on the written functions.
                 I decided to extend the project and wrote a web front end, with a backend http server that validates and sanitises requests.
                 The app also builds the html internally, allowing for dynamic grid creation.""".trimIndent(),
-                imageLink = "/static/images/projects/sudoku-verifier.png",
+                imageLink = "sudoku-verifier.png",
                 imageAlt = "A screenshot of the sudoku verifier application, showing an unsolved sudoku puzzle.",
                 hostLink = "https://sudoku-verifier.onrender.com/",
-                hostIcon = "/static/images/icons/render.svg",
+                hostIcon = "render.svg",
                 hostIconAlt = "Application hosted on Render",
                 srcLink = "https://github.com/markstanden/sudoku-verifier",
-                srcIcon = "/static/images/icons/github.png",
+                srcIcon = "github.png",
                 srcIconAlt = "Source code hosted on GitHub",
         ),
 
@@ -29,12 +29,12 @@ val projects = listOf(
                 body = """
                Initially written in HTML/CSS and hosted on netlify, my homepage has undergone a re-write in kotlin, with templating and a RESTful API backend for feedback and contact forms.
                """.trimIndent(),
-                imageLink = "/static/images/projects/ms-dev.png",
+                imageLink = "ms-dev.png",
                 imageAlt = "A screenshot of the homepage header section",
                 hostLink = "https://markstanden.dev/",
-                hostIcon = "/static/images/icons/heroku.svg",
+                hostIcon = "heroku.svg",
                 hostIconAlt = "Application hosted on Heroku",
                 srcLink = "https://github.com/markstanden/markstanden-dev",
-                srcIcon = "/static/images/icons/github.png",
+                srcIcon = "github.png",
                 srcIconAlt = "Source code hosted on GitHub",
         ))

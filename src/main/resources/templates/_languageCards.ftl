@@ -19,7 +19,7 @@
                         <h3 class="code-card--title">${language.title}</h3>
                         <img alt="${language.iconAlt}"
                              class="code-image"
-                             src="${language.iconLink}"
+                             src="icons/${language.iconLink}"
                         />
                     </section>
                     <section class="code-card-section--text">

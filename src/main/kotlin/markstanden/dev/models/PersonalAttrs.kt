@@ -3,7 +3,7 @@ package markstanden.dev.models
 data class PersonalAttrs(val title: String, val body: String, val iconLink: String, val iconAlt: String)
 
 val personalAttrs = listOf(
-        PersonalAttrs(title = "Team Focused", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!",
+        PersonalAttrs(title = "Team Focused", iconLink = "printer.svg", iconAlt = "Printer!",
                       body = """
                 Having been a team member for my entire working
                 life, I am used to working in small teams with
@@ -14,7 +14,7 @@ val personalAttrs = listOf(
                 constructively working to help the team perform well.
             """.trimIndent()),
 
-        PersonalAttrs(title = "Motivated", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!", body = """
+        PersonalAttrs(title = "Motivated", iconLink = "printer.svg", iconAlt = "Printer!", body = """
             Highly motivated by personal challenges,
             and driven by the reward of a clean solution
             to a difficult problem.
@@ -23,7 +23,7 @@ val personalAttrs = listOf(
             planning a course of action before rushing in.
         """.trimIndent()),
 
-        PersonalAttrs(title = "Cool Head", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!", body = """
+        PersonalAttrs(title = "Cool Head", iconLink = "printer.svg", iconAlt = "Printer!", body = """
             Known for my patience and calm friendly manner, I
             am able to remain calm when others
             around me are losing control, often
@@ -35,7 +35,7 @@ val personalAttrs = listOf(
             solution was unlikely to be perfect.
         """.trimIndent()),
 
-        PersonalAttrs(title = "Testing First", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!",
+        PersonalAttrs(title = "Testing First", iconLink = "printer.svg", iconAlt = "Printer!",
                       body = """
             Small re-usable blocks of code minimise wastage,
             encouraging re-use where possible,
@@ -47,7 +47,7 @@ val personalAttrs = listOf(
             The tests allow for continuous refactoring and code improvements.
         """.trimIndent()),
 
-        PersonalAttrs(title = "Functional Thinking", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!",
+        PersonalAttrs(title = "Functional Thinking", iconLink = "printer.svg", iconAlt = "Printer!",
                       body = """
         Avoiding the pitfalls and concurrency issues associated
         with mutating shared state, I work to minimise the
@@ -57,7 +57,7 @@ val personalAttrs = listOf(
         and therefore a more solid reliable application overall.
     """.trimIndent()),
 
-        PersonalAttrs(title = "Always Learning", iconLink = "/static/images/icons/printer.svg", iconAlt = "Printer!",
+        PersonalAttrs(title = "Always Learning", iconLink = "printer.svg", iconAlt = "Printer!",
                       body = """
         Driven by the love of problem-solving, researching, learning new ways to overcome obstacles.
         Currently completing a computer science degree in my spare time, 

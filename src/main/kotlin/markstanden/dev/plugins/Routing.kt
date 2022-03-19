@@ -9,7 +9,7 @@ import java.io.File
 fun Application.configureRouting() {
 
     routing {
-        static("static") {
+        static("/") {
             staticRootFolder = File("static")
             static("icons") {
                 files("icons")
