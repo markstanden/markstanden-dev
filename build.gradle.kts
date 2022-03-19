@@ -32,14 +32,6 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 }
 
-tasks.withType<Jar> {
-    manifest {
-        attributes(mapOf(
-                "Main-Class" to "io.ktor.server.netty.EngineMain"
-        ))
-    }
-}
-
 tasks {
     shadowJar {
         manifest {
@@ -50,9 +42,10 @@ tasks {
     create("stage").dependsOn("installDist")
 }
 
-tasks.register<Copy>("copyReportsDirForArchiving2") {
-    from(layout.buildDirectory) {
-        include("files/**")
+sourceSets {
+    main {
+        resources {
+            srcDirs("src/main/resources")
+        }
     }
-    into(layout.buildDirectory.dir("static"))
 }

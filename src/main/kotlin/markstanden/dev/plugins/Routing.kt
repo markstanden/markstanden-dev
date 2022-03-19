@@ -4,7 +4,6 @@ import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.routing.*
 import markstanden.dev.routes.homepageRouting
-import java.io.File
 
 fun Application.configureRouting() {
 
@@ -13,13 +12,6 @@ fun Application.configureRouting() {
             resources("files")
         }
 
-        static("/static") {
-            staticRootFolder = File("/static")
-            static("/") {
-                files("css")
-                files("images")
-            }
-        }
         homepageRouting()
     }
 
