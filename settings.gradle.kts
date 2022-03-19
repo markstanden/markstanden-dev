@@ -1,1 +1,1 @@
-rootProject.name = "static"
+rootProject.name = "markstanden.dev"
