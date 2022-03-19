@@ -49,3 +49,10 @@ tasks {
     /** Heroku build stage */
     create("stage").dependsOn("installDist")
 }
+
+tasks.register<Copy>("copyReportsDirForArchiving2") {
+    from(layout.buildDirectory) {
+        include("files/**")
+    }
+    into(layout.buildDirectory.dir("resources/files"))
+}
