@@ -23,7 +23,8 @@ fun Application.configureRouting() {
             static("css") {
                 files("css")
             }
-        } homepageRouting ()
+        }
+        homepageRouting ()
     }
 
 
