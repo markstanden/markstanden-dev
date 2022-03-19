@@ -4,6 +4,8 @@
       <settings>
         <option name="imageTag" value="markstanden" />
         <option name="containerName" value="" />
+        <option name="entrypoint" value="bash" />
+        <option name="commandLineOptions" value="--network netty" />
         <option name="sourceFilePath" value="Dockerfile" />
       </settings>
     </deployment>
