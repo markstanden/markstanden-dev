@@ -4,14 +4,26 @@ import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.routing.*
 import markstanden.dev.routes.homepageRouting
+import java.io.File
 
 fun Application.configureRouting() {
 
     routing {
-        static("/static/css") { resources("/css") }
-        static("/static/images/icons") { resources("/images/icons") }
-        static("/static/images/projects") { resources("/images/projects") }
-        homepageRouting()
+        static("static") {
+            staticRootFolder = File("static")
+            default("html/index.html")
+            static("images") {
+                static("icons") {
+                    files("icons")
+                }
+                static("projects") {
+                    files("projects")
+                }
+            }
+            static("css") {
+                files("css")
+            }
+        } homepageRouting ()
     }
 
 

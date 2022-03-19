@@ -48,10 +48,10 @@ val languages = listOf(
                         The structural web foundation. Standards-compliant code written in
                         HTML5 will stand the test of time, but I have also transferred
                         these skills to include JSX and templating.
-                    """.trimIndent(), colorClass = "html"),
+                    """.trimIndent(), colorClass = "web/html"),
 
         Language(title = "CSS 3", iconAlt = "CSS 3 Shield Icon", iconLink = "/static/images/icons/css3.svg", body = """
                         Providing an outlet for my design skills, I have successfully produced
                         CSS and Sass(SCSS) and have experimented with CSS in JS frameworks, although
                         for the most tasks I prefer vanilla CSS using CSS custom properties (CSS variables)
-                    """.trimIndent(), colorClass = "css"))
+                    """.trimIndent(), colorClass = "static/css"))
