@@ -9,7 +9,7 @@ WORKDIR /app
 RUN ./gradlew shadowJar --no-daemon
 
 WORKDIR /app
-COPY ./build/libs/*.jar /app/
+RUN cp ./build/libs/*.jar /app/
 
 #FROM openjdk:alpine AS prod
 #COPY --from=build /app/build/libs/*.jar /app/
