@@ -9,10 +9,10 @@ fun Application.configureRouting() {
 
     routing {
         static("/static") {
-            resources("/files")
+            files("/files")
         }
         static("/static/css") {
-            resources("/files/css")
+            files("/files/css")
         }
 
         homepageRouting()
