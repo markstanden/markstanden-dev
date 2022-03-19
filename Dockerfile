@@ -7,8 +7,9 @@ WORKDIR /app
 RUN ./gradlew build --no-daemon
 
 FROM openjdk AS prod
-COPY --from=build /app/build/libs/*.jar /app/
+COPY --from=build /app/build/libs/*.jar /app/build/lib/
+COPY --from=build /app/build/scripts /app/build/
 COPY --from=build /app/static /app/
 
 EXPOSE 8080:8080
-ENTRYPOINT ["java","-jar","markstanden.dev-0.0.1-all.jar"]
+ENTRYPOINT [/app/build/scripts/markstanden.dev]
