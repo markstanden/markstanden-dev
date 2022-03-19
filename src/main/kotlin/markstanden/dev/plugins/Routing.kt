@@ -8,11 +8,9 @@ import markstanden.dev.routes.homepageRouting
 fun Application.configureRouting() {
 
     routing {
-        static("/static") {
-            resources(".")
-//            files("src/static")
-        }
-
+        static("/static/css") { resources("/css") }
+        static("/static/images/icons") { resources("/images/icons") }
+        static("/static/images/projects") { resources("/images/projects") }
         homepageRouting()
     }
 
