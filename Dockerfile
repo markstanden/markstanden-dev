@@ -8,9 +8,11 @@ RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
 WORKDIR /app
 # RUN ./gradlew shadowJar
 RUN ./gradlew
+COPY /build/libs/* /app/
 
 #FROM openjdk:alpine
-COPY --from=build /app/build/libs/* /app/
+
+#COPY --from=build /app/build/libs/* /app/
 #COPY --from=build /app/src/main/resources/files/css* /static/css/
 #COPY --from=build /app/src/main/resources/files/images* /static/images/
 
