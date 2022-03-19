@@ -1,4 +1,4 @@
-FROM openjdk:alpine AS build
+FROM amazoncorretto:11-alpine-jdk AS build
 RUN apk update
 RUN apk add git
 
