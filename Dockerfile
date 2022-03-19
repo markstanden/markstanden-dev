@@ -1,4 +1,4 @@
-FROM amazoncorretto:11 AS build
+FROM gradle AS build
 
 ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main version.json
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
