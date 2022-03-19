@@ -1,6 +1,4 @@
-FROM amazoncorretto:11-alpine-jdk AS build
-RUN apk update
-RUN apk add git
+FROM amazoncorretto:11 AS build
 
 ADD https://api.github.com/repos/markstanden/markstanden-dev/git/refs/heads/main version.json
 RUN git clone -b main https://github.com/markstanden/markstanden-dev.git /app
