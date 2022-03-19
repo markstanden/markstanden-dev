@@ -6,6 +6,7 @@
                 name="viewport"
         />
         <title>${pageTitle}</title>
+        <link href="/static/css/global.css" rel="stylesheet"/>
         <link href="${cssFilePath}" rel="stylesheet"/>
     </head>
 </#macro>
