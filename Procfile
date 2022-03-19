@@ -1,1 +1,1 @@
-web: ./build/install/static/bin/static
+web: ./build/install/static-shadow/bin/static

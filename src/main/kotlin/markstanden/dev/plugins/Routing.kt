@@ -8,7 +8,9 @@ import markstanden.dev.routes.homepageRouting
 fun Application.configureRouting() {
 
     routing {
-        static("static") { resources("files") }
+        static("static") { resources("files/") }
         homepageRouting()
     }
+
+
 }
