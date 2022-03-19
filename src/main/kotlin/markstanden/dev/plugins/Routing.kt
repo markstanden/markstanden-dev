@@ -15,7 +15,7 @@ fun Application.configureRouting() {
 
         static("/static") {
             staticRootFolder = File("/static")
-            static("assets") {
+            static("/") {
                 files("css")
                 files("images")
             }
