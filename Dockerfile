@@ -16,4 +16,4 @@ RUN ./gradlew
 
 EXPOSE 8080
 #ENTRYPOINT ["java","-jar","/app/markstanden.dev-0.0.1-all.jar"]
-ENTRYPOINT ["./build/install/markstanden.dev-shadow/bin/markstanden.dev"]
+ENTRYPOINT ["./build/install/markstanden.dev/bin/markstanden.dev"]
