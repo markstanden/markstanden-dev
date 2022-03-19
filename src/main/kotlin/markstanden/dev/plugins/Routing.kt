@@ -11,20 +11,17 @@ fun Application.configureRouting() {
     routing {
         static("static") {
             staticRootFolder = File("static")
-            default("html/index.html")
-            static("images") {
-                static("icons") {
-                    files("icons")
-                }
-                static("projects") {
-                    files("projects")
-                }
+            static("icons") {
+                files("icons")
+            }
+            static("projects") {
+                files("projects")
             }
             static("css") {
                 files("css")
             }
         }
-        homepageRouting ()
+        homepageRouting()
     }
 
 
