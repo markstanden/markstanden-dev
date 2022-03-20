@@ -8,7 +8,7 @@ WORKDIR /app
 RUN ./gradlew build --no-daemon
 
 FROM openjdk AS prod
-EXPOSE 8080
+EXPOSE 8080:8080
 
 COPY --from=build /app/build/libs/*.jar /app/build/lib/
 COPY --from=build /app/build/scriptsShadow /app/build/scriptsShadow
