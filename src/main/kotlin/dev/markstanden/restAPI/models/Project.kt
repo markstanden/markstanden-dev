@@ -1,4 +1,4 @@
-package markstanden.dev.models
+package dev.markstanden.restAPI.models
 
 class Project(
         val title: String, val body: String, val imageLink: String, val imageAlt: String,

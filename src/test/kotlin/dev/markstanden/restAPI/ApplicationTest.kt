@@ -1,5 +1,6 @@
-package markstanden.dev
+package dev.markstanden.restAPI
 
+import dev.markstanden.restAPI.plugins.configureRouting
 import io.ktor.server.routing.*
 import io.ktor.http.*
 import io.ktor.server.http.content.*

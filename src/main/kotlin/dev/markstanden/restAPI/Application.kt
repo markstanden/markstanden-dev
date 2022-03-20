@@ -1,8 +1,8 @@
-package markstanden.dev
+package dev.markstanden.restAPI
 
+import dev.markstanden.restAPI.plugins.configureRouting
+import dev.markstanden.restAPI.plugins.configureTemplating
 import io.ktor.server.application.*
-import markstanden.dev.plugins.configureRouting
-import markstanden.dev.plugins.configureTemplating
 
 fun main(args: Array<String>): Unit =
     io.ktor.server.cio.EngineMain.main(args)

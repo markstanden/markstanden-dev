@@ -1,4 +1,4 @@
-package markstanden.dev.models
+package dev.markstanden.restAPI.models
 
 data class PersonalAttrs(val title: String, val body: String, val iconLink: String, val iconAlt: String)
 

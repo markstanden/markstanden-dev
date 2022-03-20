@@ -1,9 +1,9 @@
-package markstanden.dev.plugins
+package dev.markstanden.restAPI.plugins
 
+import dev.markstanden.restAPI.routes.homepageRouting
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.routing.*
-import markstanden.dev.routes.homepageRouting
 import java.io.File
 
 fun Application.configureRouting() {

@@ -6,15 +6,20 @@
     <!DOCTYPE html>
     <html lang="en">
 
-    <@head.main pageTitle "/css/${cssFile}"/>
+    <@head.main pageTitle "${cssFile}"/>
 
     <body>
-    <@header.header/>
+
+        <@header.header/>
+
     <main class="main-wrapper">
 
         <#nested/>
+
     </main>
-    <@footer.footer/>
+
+        <@footer.footer/>
+
     </body>
     </html>
 </#macro>

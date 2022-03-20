@@ -1,4 +1,4 @@
-package markstanden.dev.models
+package dev.markstanden.restAPI.models
 
 @kotlinx.serialization.Serializable
 data class Language(

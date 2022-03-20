@@ -1,4 +1,4 @@
-<#macro main pageTitle cssFilePath>
+<#macro main pageTitle cssFile>
     <head>
         <meta charset="UTF-8"/>
         <meta
@@ -6,7 +6,7 @@
                 name="viewport"
         />
         <title>${pageTitle}</title>
-        <link href="/css/global.css" rel="stylesheet"/>
-        <link href="${cssFilePath}" rel="stylesheet"/>
+        <link href="/styles/global.css" rel="stylesheet"/>
+        <link href="/styles/${cssFile}" rel="stylesheet"/>
     </head>
 </#macro>
