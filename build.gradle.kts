@@ -13,7 +13,7 @@ plugins {
 group = "markstanden.dev"
 version = "0.0.1"
 application {
-    mainClass.set("io.ktor.server.cio.EngineMain")
+    mainClass.set("dev.markstanden.restAPI.ApplicationKt")
 }
 
 repositories {
@@ -41,7 +41,7 @@ dependencies {
 tasks {
     shadowJar {
         manifest {
-            attributes(Pair("Main-Class", "io.ktor.server.cio.EngineMain"))
+            attributes(Pair("Main-Class", "dev.markstanden.restAPI.ApplicationKt"))
         }
     }
 
