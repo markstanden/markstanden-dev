@@ -17,4 +17,14 @@ fun Route.homepageRouting() {
                                                  "projects" to projects)))
         }
     }
+    route("/pages") {
+        route("/home.html") {
+            get {
+                call.respond(FreeMarkerContent("homepage.ftl",
+                                               mapOf("languages" to languages,
+                                                     "attributes" to personalAttrs,
+                                                     "projects" to projects)))
+            }
+        }
+    }
 }

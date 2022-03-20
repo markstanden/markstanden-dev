@@ -12,7 +12,7 @@ fun Route.staticRouting() {
     static("projects") {
         files("projects")
     }
-    static("css") {
-        files("css")
+    static("styles") {
+        files("styles")
     }
 }

@@ -14,7 +14,7 @@
 
             <#list attributes as attribute>
                 <article class="attribute-card shadow">
-                    <img alt="${attribute.iconAlt}" src="icons/${attribute.iconLink}">
+                    <img alt="${attribute.iconAlt}" src="/icons/${attribute.iconLink}">
                     <h3>${attribute.title}</h3>
                     <p>
                         ${attribute.body}

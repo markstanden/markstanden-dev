@@ -18,7 +18,7 @@
                     </section>
                     <section class="project-card--desc">
                         <img alt="${project.imageAlt}"
-                             src="projects/${project.imageLink}">
+                             src="/projects/${project.imageLink}">
                         <p>
                             ${project.body}
                         </p>
@@ -26,13 +26,13 @@
                     <section class="project-card--source-links">
                         <a class="button--secondary button--project as-button shadow"
                            href="${project.hostLink}">
-                            <img src="icons/${project.hostIcon}"
+                            <img src="/icons/${project.hostIcon}"
                                  alt="${project.hostIconAlt}"/>
                             <p>View Application</p>
                         </a>
                         <a class="button--secondary button--project as-button shadow"
                            href="${project.srcLink}">
-                            <img src="icons/${project.srcIcon}"
+                            <img src="/icons/${project.srcIcon}"
                                  alt="${project.srcIconAlt}"/>
                             <p>View Source Code</p>
                         </a>
