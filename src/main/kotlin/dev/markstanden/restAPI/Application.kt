@@ -2,13 +2,12 @@ package dev.markstanden.restAPI
 
 import dev.markstanden.restAPI.plugins.configureRouting
 import dev.markstanden.restAPI.plugins.configureTemplating
-import io.ktor.server.application.*
+import io.ktor.server.engine.*
+import io.ktor.server.cio.*
 
-fun main(args: Array<String>): Unit =
-    io.ktor.server.cio.EngineMain.main(args)
-
-@Suppress("unused")
-fun Application.module() {
-    configureRouting()
-    configureTemplating()
+fun main() {
+    embeddedServer(CIO, port = 8080, host = "0.0.0.0") {
+        configureRouting()
+        configureTemplating()
+    }.start(wait = true)
 }

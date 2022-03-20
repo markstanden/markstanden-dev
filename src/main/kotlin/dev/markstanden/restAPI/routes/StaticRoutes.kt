@@ -1,22 +1,18 @@
 package dev.markstanden.restAPI.routes
 
-import dev.markstanden.restAPI.models.languages
-import dev.markstanden.restAPI.models.personalAttrs
-import dev.markstanden.restAPI.models.projects
-import io.ktor.server.application.*
-import io.ktor.server.freemarker.*
-import io.ktor.server.response.*
+import io.ktor.server.http.content.*
 import io.ktor.server.routing.*
+import java.io.File
 
-class StaticRoutes {
-    fun Route.homepageRouting() {
-        route("/") {
-            get {
-                call.respond(FreeMarkerContent("homepage.ftl",
-                                               mapOf("languages" to languages,
-                                                     "attributes" to personalAttrs,
-                                                     "projects" to projects)))
-            }
-        }
+fun Route.staticRouting() {
+    staticRootFolder = File("static")
+    static("icons") {
+        files("icons")
+    }
+    static("projects") {
+        files("projects")
+    }
+    static("css") {
+        files("css")
     }
 }
